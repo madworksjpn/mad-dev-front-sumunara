@@ -1,0 +1,88 @@
+// === Import ===
+@import "./navbar";
+
+// General stylings
+section {
+    min-height: 100vh;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+// Section - Home
+#home {
+    background: url("https://source.unsplash.com/1600x900/?fukuoka") fixed;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .container {
+        margin-bottom: 5vw;
+
+        .input-group {
+            height: 80px;
+
+            .form-control {
+                height: 80px;
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+}
+
+// Section - What is sumunara
+#what-is-sumunara {
+    .card {
+        border: none;
+
+        .card-img-top {
+            margin: auto;
+            width: 60%;
+        }
+    }
+}
+
+// Section - Areas
+#areas {
+    .col {
+        align-items: center;
+        margin: 2rem;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+}
+
+// Footer
+#footer {
+    margin-top: 5rem;
+    background: lightgrey;
+
+    .row {
+        max-width: 960px;
+
+        .col-3 {
+            margin: 1rem;
+
+            h5 {
+                margin: 0;
+                padding: 1rem 0 0.5rem;
+            }
+
+            a {
+                color: inherit;
+
+                &:hover {
+                    // text-decoration: none;
+                }
+            }
+        }
+    }
+}

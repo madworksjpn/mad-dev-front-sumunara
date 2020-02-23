@@ -1,0 +1,50 @@
+.navbar.navbar-expand-lg {
+    z-index: 10;
+    padding: 25px;
+    transition: 0.6s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    // height: 100px;
+    // background: #f3f3f3;
+
+    .navbar-brand {
+        margin-left: 150px;
+
+        // width: 150px;
+        // font-size: 24px;
+
+        img {
+            // float: left;
+            height: 50px;
+            margin-right: 7px;
+        }
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+
+        .nav-item {
+            margin: 0 30px;
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(4px);
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.scrolled {
+    padding: 0.5rem 1rem !important;
+    background-color: #f3f3f3 !important;
+}
