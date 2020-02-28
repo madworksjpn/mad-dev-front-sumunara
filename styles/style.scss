@@ -2,6 +2,10 @@
 @import "./navbar";
 
 // General stylings
+a {
+    color: inherit;
+}
+
 section {
     min-height: 100vh;
 }
@@ -17,12 +21,12 @@ section {
 // Section - Home
 #home {
     background: url("https://source.unsplash.com/1600x900/?fukuoka") fixed;
-
     display: flex;
     align-items: flex-end;
     justify-content: center;
 
     .container {
+        max-width: 960px;
         margin-bottom: 5vw;
 
         .input-group {
@@ -40,6 +44,8 @@ section {
 #what-is-sumunara {
     .card {
         border: none;
+        width: 90%;
+        margin: auto;
 
         .card-img-top {
             margin: auto;
@@ -55,7 +61,15 @@ section {
         margin: 2rem;
 
         img {
+            height: 100%;
             border-radius: 5px;
+        }
+
+        .media-body {
+            height: 100%;
+            margin-left: initial;
+            display: flex;
+            align-items: center;
         }
     }
 }
@@ -75,14 +89,18 @@ section {
                 margin: 0;
                 padding: 1rem 0 0.5rem;
             }
+        }
+    }
 
-            a {
-                color: inherit;
+    #copyright {
+        max-width: 960px;
+        height: 50px;
+        margin: auto;
+        border-top: solid 1px black;
 
-                &:hover {
-                    // text-decoration: none;
-                }
-            }
+        p {
+            display: inline-block;
+            margin: auto;
         }
     }
 }

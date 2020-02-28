@@ -8,23 +8,24 @@
   width: 100%;
   font-weight: 700;
   font-size: 1.2rem;
+  height: 110px;
 }
 
-.navbar.navbar-expand-lg .navbar-brand {
-  margin-left: 150px;
+.navbar.navbar-expand-lg .container {
+  max-width: 960px;
 }
 
-.navbar.navbar-expand-lg .navbar-brand img {
+.navbar.navbar-expand-lg .container .navbar-brand img {
   height: 50px;
   margin-right: 7px;
 }
 
-.navbar.navbar-expand-lg .navbar-nav {
+.navbar.navbar-expand-lg .container .navbar-nav {
   margin-left: auto;
-}
-
-.navbar.navbar-expand-lg .navbar-nav .nav-item {
-  margin: 0 30px;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dropdown-toggle::after {
@@ -46,6 +47,11 @@
 .scrolled {
   padding: 0.5rem 1rem !important;
   background-color: #f3f3f3 !important;
+  height: 65px !important;
+}
+
+a {
+  color: inherit;
 }
 
 section {
@@ -74,6 +80,7 @@ section {
 }
 
 #home .container {
+  max-width: 960px;
   margin-bottom: 5vw;
 }
 
@@ -88,6 +95,8 @@ section {
 
 #what-is-sumunara .card {
   border: none;
+  width: 90%;
+  margin: auto;
 }
 
 #what-is-sumunara .card .card-img-top {
@@ -103,7 +112,19 @@ section {
 }
 
 #areas .col img {
+  height: 100%;
   border-radius: 5px;
+}
+
+#areas .col .media-body {
+  height: 100%;
+  margin-left: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #footer {
@@ -124,7 +145,15 @@ section {
   padding: 1rem 0 0.5rem;
 }
 
-#footer .row .col-3 a {
-  color: inherit;
+#footer #copyright {
+  max-width: 960px;
+  height: 50px;
+  margin: auto;
+  border-top: solid 1px black;
+}
+
+#footer #copyright p {
+  display: inline-block;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
