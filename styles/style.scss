@@ -49,27 +49,52 @@ section {
 
         .card-img-top {
             margin: auto;
-            width: 60%;
+            width: 50%;
         }
     }
 }
 
 // Section - Areas
 #areas {
-    .col {
-        align-items: center;
-        margin: 2rem;
+    .container {
+        .col-lg-6 {
+            margin-top: 20px;
 
-        img {
-            height: 100%;
-            border-radius: 5px;
+            .media {
+                width: 90%;
+
+                img {
+                    border-radius: 10px;
+                    max-width: 400px;
+                }
+
+                .media-body {
+                    height: 100%;
+                    margin-left: initial;
+                    display: flex;
+                    align-items: center;
+                    max-width: 400px;
+                    margin-top: 15px;
+                }
+            }
         }
 
-        .media-body {
-            height: 100%;
-            margin-left: initial;
-            display: flex;
-            align-items: center;
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) {
+            .col-lg-6 .media {
+                img {
+                    max-width: 250px;
+                }
+
+                .media-body {
+                    margin-top: initial;
+                }
+            }
+        }
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            margin: 2rem;
         }
     }
 }
@@ -82,25 +107,43 @@ section {
     .row {
         max-width: 960px;
 
-        .col-3 {
-            margin: 1rem;
+        .col-sm-4 {
+            display: grid;
+            margin: 1rem 0;
 
             h5 {
                 margin: 0;
-                padding: 1rem 0 0.5rem;
+                padding: 1rem 0;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    padding-bottom: 0.5rem;
+                }
             }
         }
     }
 
     #copyright {
         max-width: 960px;
-        height: 50px;
+        height: 75px;
         margin: auto;
         border-top: solid 1px black;
 
         p {
             display: inline-block;
             margin: auto;
+        }
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .row {
+            .col-sm-4 {
+                margin: 1rem;
+            }
         }
     }
 }

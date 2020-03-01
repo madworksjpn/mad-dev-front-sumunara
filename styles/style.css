@@ -8,7 +8,6 @@
   width: 100%;
   font-weight: 700;
   font-size: 1.2rem;
-  height: 110px;
 }
 
 .navbar.navbar-expand-lg .container {
@@ -22,10 +21,22 @@
 
 .navbar.navbar-expand-lg .container .navbar-nav {
   margin-left: auto;
-  width: 60%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 10px 0;
+}
+
+@media (min-width: 992px) {
+  .navbar.navbar-expand-lg .container .navbar-nav {
+    width: 60%;
+    margin: 0 0 0 auto;
+  }
+}
+
+.navbar.navbar-expand-lg.scrolled {
+  padding: 0 1rem !important;
+  background-color: #f3f3f3 !important;
 }
 
 .dropdown-toggle::after {
@@ -42,12 +53,6 @@
 
 .dropdown-menu {
   margin-top: 0;
-}
-
-.scrolled {
-  padding: 0.5rem 1rem !important;
-  background-color: #f3f3f3 !important;
-  height: 65px !important;
 }
 
 a {
@@ -101,22 +106,23 @@ section {
 
 #what-is-sumunara .card .card-img-top {
   margin: auto;
-  width: 60%;
+  width: 50%;
 }
 
-#areas .col {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 2rem;
+#areas .container .col-lg-6 {
+  margin-top: 20px;
 }
 
-#areas .col img {
-  height: 100%;
-  border-radius: 5px;
+#areas .container .col-lg-6 .media {
+  width: 90%;
 }
 
-#areas .col .media-body {
+#areas .container .col-lg-6 .media img {
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+#areas .container .col-lg-6 .media .media-body {
   height: 100%;
   margin-left: initial;
   display: -webkit-box;
@@ -125,6 +131,23 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 400px;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  #areas .container .col-lg-6 .media img {
+    max-width: 250px;
+  }
+  #areas .container .col-lg-6 .media .media-body {
+    margin-top: initial;
+  }
+}
+
+@media (min-width: 992px) {
+  #areas .container {
+    margin: 2rem;
+  }
 }
 
 #footer {
@@ -136,18 +159,28 @@ section {
   max-width: 960px;
 }
 
-#footer .row .col-3 {
-  margin: 1rem;
+#footer .row .col-sm-4 {
+  display: -ms-grid;
+  display: grid;
+  margin: 1rem 0;
 }
 
-#footer .row .col-3 h5 {
+#footer .row .col-sm-4 h5 {
   margin: 0;
-  padding: 1rem 0 0.5rem;
+  padding: 1rem 0;
+}
+
+#footer .row .col-sm-4 ul {
+  padding: 0;
+}
+
+#footer .row .col-sm-4 ul li {
+  padding-bottom: 0.5rem;
 }
 
 #footer #copyright {
   max-width: 960px;
-  height: 50px;
+  height: 75px;
   margin: auto;
   border-top: solid 1px black;
 }
@@ -155,5 +188,11 @@ section {
 #footer #copyright p {
   display: inline-block;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  #footer .row .col-sm-4 {
+    margin: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,7 +7,6 @@
     width: 100%;
     font-weight: 700;
     font-size: 1.2rem;
-    height: 110px;
 
     .container {
         max-width: 960px;
@@ -21,9 +20,20 @@
 
         .navbar-nav {
             margin-left: auto;
-            width: 60%;
             justify-content: space-between;
+            margin: 10px 0;
+
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) {
+                width: 60%;
+                margin: 0 0 0 auto;
+            }
         }
+    }
+
+    &.scrolled {
+        padding: 0 1rem !important;
+        background-color: #f3f3f3 !important;
     }
 }
 
@@ -37,10 +47,4 @@
 
 .dropdown-menu {
     margin-top: 0;
-}
-
-.scrolled {
-    padding: 0.5rem 1rem !important;
-    background-color: #f3f3f3 !important;
-    height: 65px !important;
 }

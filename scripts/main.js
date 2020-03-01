@@ -5,7 +5,7 @@ const $dropdownMenu = $(".dropdown-menu");
 const showClass = "show";
 
 $(window).on("load resize", function() {
-    if (this.matchMedia("(min-width: 768px)").matches) {
+    if (this.matchMedia("(min-width: 992px)").matches) {
         $dropdown.hover(
             function() {
                 const $this = $(this);
@@ -32,13 +32,16 @@ window.onscroll = function() {
 
 function scrollFunction() {
     const navbar = document.querySelector(".navbar-expand-lg");
+    const navbarNav = document.querySelector(".navbar-nav");
 
     if (
         document.body.scrollTop > 150 ||
         document.documentElement.scrollTop > 150
     ) {
         navbar.classList.add("scrolled");
+        navbarNav.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");
+        navbarNav.classList.remove("scrolled");
     }
 }
