@@ -1,0 +1,43 @@
+// Variables
+$primary-color: #444;
+$secondary-color: #eece1a;
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+// Media Query Mixins
+// Smartphones
+@mixin screen-xs {
+    @media screen and (max-width: 575px) {
+        @content;
+    }
+}
+
+// Tablets
+@mixin screen-sm {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+// Small Laptops
+@mixin screen-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+// Desktops $ Laptops
+@mixin screen-lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+// Widescreens
+@mixin screen-xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

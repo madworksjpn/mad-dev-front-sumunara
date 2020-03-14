@@ -7,11 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <!-- Chart.js -->
+    <!-- <script src="Chart.js"></script> -->
 
     <title>sumunara</title>
 </head>
@@ -24,6 +33,7 @@
                 <img src="images/logo_transparent2.png" alt="sumunara logo">
                 sumunara
             </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,18 +45,8 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            What is sumunara?
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Service One</a>
-                            <a class="dropdown-item" href="#">Another service</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Yet another service</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">What is sumunara?</a>
                     </li>
 
                     <li class="nav-item">
@@ -62,7 +62,57 @@
     </nav>
     <!-- Navbar -->
 
+    <!-- Results summary -->
+    <div id="summary" class="container">
+        <h1 id="summary-title" class="mb-4">Here's what you got...</h1>
 
+        <h3 id="summary-area" class="mb-3">Fukuoka Higashikouen</h3>
+
+        <p id="summary-notes" class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos, quod
+            consequuntur
+            qui incidunt fugiat quia nesciunt soluta assumenda unde?</p>
+    </div>
+    <!-- Results summary -->
+
+    <!-- Results -->
+    <div id="results" class="container">
+        <div class="row justify-content-around align-items-center">
+            <div id="doughnut-chart-container" class="col-8 col-sm-6 col-md-4">
+                <canvas id="doughnut-chart"></canvas>
+            </div>
+
+            <div id="stats" class="col-10 col-md-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h4>Lorem, ipsum dolor.</h4>
+
+                    <div>
+                        <p>
+                            <a href="#" id="population" class="get-data">Population: <span>25,000</span></a>
+                        </p>
+
+                        <p>
+                            <a href="#" id="noise" class="get-data">Noise: <span>Moderate</span></a>
+                        </p>
+
+                        <p>
+                            <a href="#" id="traffic-accident-rate" class="get-data">
+                                Traffic accident rate: <span>Pretty bad</span>
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="#" id="crime-rate" class="get-data">Crime rate: <span>Bad</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bar-charts-container">
+            <canvas id="bar-charts" width="400" height="400"></canvas>
+        </div>
+    </div>
+    <!-- Results -->
 
     <!-- Footer -->
     <footer id="footer">
@@ -148,7 +198,7 @@
             </div>
 
             <div id="copyright" class="text-center row align-items-center">
-                <p>&copy; 2020 MAD Works, LLC</p>
+                <p><span id="year"></span> MAD Works, LLC</p>
             </div>
         </div>
     </footer>
@@ -165,6 +215,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
 
     <script src="scripts/main.js"></script>
 </body>

@@ -1,0 +1,37 @@
+// Footer
+#footer {
+    margin-top: 4rem;
+    background: lightgrey;
+
+    .row {
+        .col-md-3 {
+            display: grid;
+            margin: 1rem;
+            text-align: center;
+
+            h5 {
+                margin: 0;
+                padding: 1rem 0;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    #copyright {
+        height: 75px;
+        margin: auto;
+        border-top: solid 1px black;
+
+        p {
+            display: inline-block;
+            margin: auto;
+        }
+    }
+}

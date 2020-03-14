@@ -1,13 +1,31 @@
 // === Import ===
+@import "./config";
 @import "./navbar";
+@import "./footer";
+@import "./index";
+@import "./results";
+@import "./mobile";
+@import "./animation";
 
 // General stylings
+body {
+    margin: 0;
+}
+
 a {
     color: inherit;
 }
 
 section {
     min-height: 100vh;
+
+    &:not(#home) {
+        margin-top: 2rem;
+    }
+}
+
+.h-100px {
+    height: 100px;
 }
 
 .h-200 {
@@ -18,132 +36,6 @@ section {
     height: 300px;
 }
 
-// Section - Home
-#home {
-    background: url("https://source.unsplash.com/1600x900/?fukuoka") fixed;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    .container {
-        max-width: 960px;
-        margin-bottom: 5vw;
-
-        .input-group {
-            height: 80px;
-
-            .form-control {
-                height: 80px;
-                padding: 1rem 1.5rem;
-            }
-        }
-    }
-}
-
-// Section - What is sumunara
-#what-is-sumunara {
-    .card {
-        border: none;
-        width: 90%;
-        margin: auto;
-
-        .card-img-top {
-            margin: auto;
-            width: 50%;
-        }
-    }
-}
-
-// Section - Areas
-#areas {
-    .container {
-        .col-lg-6 {
-            margin-top: 20px;
-
-            .media {
-                width: 90%;
-
-                img {
-                    border-radius: 10px;
-                    max-width: 400px;
-                }
-
-                .media-body {
-                    height: 100%;
-                    margin-left: initial;
-                    display: flex;
-                    align-items: center;
-                    max-width: 400px;
-                    margin-top: 15px;
-                }
-            }
-        }
-
-        // Medium devices (tablets, 768px and up)
-        @media (min-width: 768px) {
-            .col-lg-6 .media {
-                img {
-                    max-width: 250px;
-                }
-
-                .media-body {
-                    margin-top: initial;
-                }
-            }
-        }
-
-        // Large devices (desktops, 992px and up)
-        @media (min-width: 992px) {
-            margin: 2rem;
-        }
-    }
-}
-
-// Footer
-#footer {
-    margin-top: 5rem;
-    background: lightgrey;
-
-    .row {
-        max-width: 960px;
-
-        .col-sm-4 {
-            display: grid;
-            margin: 1rem 0;
-
-            h5 {
-                margin: 0;
-                padding: 1rem 0;
-            }
-
-            ul {
-                padding: 0;
-
-                li {
-                    padding-bottom: 0.5rem;
-                }
-            }
-        }
-    }
-
-    #copyright {
-        max-width: 960px;
-        height: 75px;
-        margin: auto;
-        border-top: solid 1px black;
-
-        p {
-            display: inline-block;
-            margin: auto;
-        }
-    }
-
-    // Medium devices (tablets, 768px and up)
-    @media (min-width: 768px) {
-        .row {
-            .col-sm-4 {
-                margin: 1rem;
-            }
-        }
-    }
+.container {
+    overflow: hidden;
 }

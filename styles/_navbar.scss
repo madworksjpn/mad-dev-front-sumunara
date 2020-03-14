@@ -9,7 +9,7 @@
     font-size: 1.2rem;
 
     .container {
-        max-width: 960px;
+        max-width: 90%;
 
         .navbar-brand {
             img {
@@ -19,15 +19,8 @@
         }
 
         .navbar-nav {
-            margin-left: auto;
             justify-content: space-between;
-            margin: 10px 0;
-
-            // Large devices (desktops, 992px and up)
-            @media (min-width: 992px) {
-                width: 60%;
-                margin: 0 0 0 auto;
-            }
+            margin: 1rem 0 1rem auto;
         }
     }
 

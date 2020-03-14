@@ -1,0 +1,59 @@
+// Wide screens (1200px and up)
+@include screen-xl {
+    // Navbar
+    .navbar.navbar-expand-lg .container ul.navbar-nav {
+        width: 60%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include screen-lg {
+    // Navbar
+    .navbar.navbar-expand-lg .container .navbar-nav {
+        width: 70%;
+        margin: 0 0 0 auto;
+    }
+
+    // Section - What is sumunara
+    #what-is-sumunara .col-lg-4 .card .card-img-top {
+        width: 50%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include screen-md {
+    // Section - Areas
+    #areas .container .col-lg-6 .media {
+        img {
+            max-width: 250px;
+        }
+
+        .media-body {
+            margin-top: initial;
+        }
+    }
+
+    // Footer
+    #footer .row .col-md-3 {
+        text-align: left;
+    }
+
+    // Results
+    #results {
+        .row.justify-content-around {
+            margin-bottom: 2rem;
+        }
+
+        #doughnut-chart-container {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Tablets
+// @include screen-sm {
+// }
+
+// Smartphones
+// @include screen-xs {
+// }
