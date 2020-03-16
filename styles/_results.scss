@@ -1,22 +1,9 @@
-// Summary
-#summary {
-    width: 90%;
-    margin: 150px auto 30px;
-}
-
 // Results
-#results {
-    #doughnut-chart-container {
-        margin-bottom: 1rem;
-    }
+#results-container {
+    margin: 160px auto 30px;
 
-    #stats {
-        h4 {
-            margin: 2rem 0;
-        }
-    }
-
-    #bar-charts-container {
-        margin-top: 30px;
+    li {
+        font-size: 1.3rem;
+        margin: 1rem 0;
     }
 }

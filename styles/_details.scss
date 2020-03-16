@@ -1,0 +1,27 @@
+// Details Summary
+#summary-container {
+    width: 90%;
+    margin: 160px auto 30px;
+}
+
+// Details
+#details {
+    #doughnut-chart-container {
+        margin-bottom: 1rem;
+    }
+
+    #stats {
+        h4 {
+            margin-top: 1rem;
+        }
+
+        li {
+            font-size: 1.3rem;
+            margin: 1rem 0;
+        }
+    }
+
+    #bar-charts-container {
+        margin-top: 30px;
+    }
+}

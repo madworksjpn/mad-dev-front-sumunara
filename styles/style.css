@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
 .navbar.navbar-expand-lg {
   z-index: 10;
   padding: 25px;
@@ -152,20 +153,34 @@
   margin-top: 15px;
 }
 
-#summary {
-  width: 90%;
-  margin: 150px auto 30px;
+#results-container {
+  margin: 160px auto 30px;
 }
 
-#results #doughnut-chart-container {
+#results-container li {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+#summary-container {
+  width: 90%;
+  margin: 160px auto 30px;
+}
+
+#details #doughnut-chart-container {
   margin-bottom: 1rem;
 }
 
-#results #stats h4 {
-  margin: 2rem 0;
+#details #stats h4 {
+  margin-top: 1rem;
 }
 
-#results #bar-charts-container {
+#details #stats li {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+#details #bar-charts-container {
   margin-top: 30px;
 }
 
@@ -195,10 +210,10 @@
   #footer .row .col-md-3 {
     text-align: left;
   }
-  #results .row.justify-content-around {
+  #details .row.justify-content-around {
     margin-bottom: 2rem;
   }
-  #results #doughnut-chart-container {
+  #details #doughnut-chart-container {
     margin-bottom: 0;
   }
 }
@@ -246,6 +261,7 @@
 
 body {
   margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 a {

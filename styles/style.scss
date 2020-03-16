@@ -4,12 +4,17 @@
 @import "./footer";
 @import "./index";
 @import "./results";
+@import "./details";
 @import "./mobile";
 @import "./animation";
+
+// Google fonts
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
 
 // General stylings
 body {
     margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 a {

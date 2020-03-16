@@ -16,7 +16,13 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Sumunara | Results</title>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <!-- Chart.js -->
+    <!-- <script src="Chart.js"></script> -->
+
+    <title>Sumunara | Details</title>
 </head>
 
 <body>
@@ -56,23 +62,57 @@
     </nav>
     <!-- Navbar -->
 
-    <!-- Results -->
-    <div id="results-container" class="container">
-        <div>
-            <h1 id="results-title" class="text-center mb-5">
-                Here's what we found...
-            </h1>
+    <!-- Details summary -->
+    <div id="summary-container" class="container">
+        <h1 id="summary-title" class="text-center mb-5">Everything about Sumiyoshi</h1>
+
+        <h3 id="summary-area" class="mb-3">Sumiyoshi</h3>
+
+        <p id="summary-notes" class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos, quod
+            consequuntur
+            qui incidunt fugiat quia nesciunt soluta assumenda unde?</p>
+    </div>
+    <!-- Details summary -->
+
+    <!-- Details -->
+    <div id="details" class="container">
+        <div class="row justify-content-around align-items-center">
+            <div id="doughnut-chart-container" class="col-8 col-sm-6 col-md-4">
+                <canvas id="doughnut-chart"></canvas>
+            </div>
+
+            <div id="stats" class="col-10 col-md-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h4>Lorem, ipsum dolor.</h4>
+
+                    <ul>
+                        <li>
+                            <a href="#" id="population" class="get-data">Population: <span>25,000</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#" id="noise" class="get-data">Noise: <span>Moderate</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#" id="traffic-accident-rate" class="get-data">
+                                Traffic accident rate: <span>Pretty high</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" id="crime-rate" class="get-data">Crime rate: <span>High</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <ul>
-            <li class="mb-3"><a href="#">住吉１丁目</a></li>
-
-            <li class="mb-3"><a href="#">住吉２丁目</a></li>
-
-            <li class="mb-3"><a href="#">住吉３丁目</a></li>
-        </ul>
+        <div id="bar-charts-container">
+            <canvas id="bar-charts" width="400" height="400"></canvas>
+        </div>
     </div>
-    <!-- Results -->
+    <!-- Details -->
 
     <!-- Footer -->
     <footer id="footer">
