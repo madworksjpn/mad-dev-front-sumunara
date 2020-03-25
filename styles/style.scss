@@ -5,6 +5,7 @@
 @import "./index";
 @import "./results";
 @import "./details";
+@import "./error";
 @import "./mobile";
 @import "./animation";
 
@@ -12,7 +13,8 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
 
 // General stylings
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     font-family: "Noto Sans JP", sans-serif;
 }
@@ -23,10 +25,6 @@ a {
 
 section {
     min-height: 100vh;
-
-    &:not(#home) {
-        margin-top: 2rem;
-    }
 }
 
 .h-100px {

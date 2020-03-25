@@ -1,6 +1,7 @@
 // Variables
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #111111;
+$secondary-color: #ee2222;
+$background-color: rgb(211, 211, 211);
 
 @mixin easeOut {
     transition: all 0.5s ease-out;
@@ -9,7 +10,7 @@ $secondary-color: #eece1a;
 // Media Query Mixins
 // Smartphones
 @mixin screen-xs {
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 400px) {
         @content;
     }
 }

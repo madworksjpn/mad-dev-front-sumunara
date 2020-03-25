@@ -1,13 +1,14 @@
 // Footer
 #footer {
     margin-top: 4rem;
-    background: lightgrey;
+    background: $background-color;
 
     .row {
         .col-md-3 {
             display: grid;
             margin: 1rem;
             text-align: center;
+            max-width: fit-content;
 
             h5 {
                 margin: 0;

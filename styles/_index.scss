@@ -1,9 +1,10 @@
 // Section - Home
 #home {
-    background: url("https://source.unsplash.com/1600x900/?fukuoka") fixed;
+    background: url("https://source.unsplash.com/zno8Yyobd30/1600x900") fixed;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    max-width: unset;
 
     .container {
         max-width: 90%;
@@ -16,12 +17,18 @@
                 height: 80px;
                 padding: 1rem 1.5rem;
             }
+
+            .btn {
+                padding: 1rem;
+            }
         }
     }
 }
 
 // Section - What is Sumunara
 #what-is-sumunara {
+    margin-top: 2rem;
+
     .col-lg-4 {
         margin: 1rem 0;
 
@@ -40,6 +47,8 @@
 
 // Section - Areas
 #areas {
+    margin-top: 2rem;
+
     .container {
         .col-lg-6 {
             margin-bottom: 3rem;

@@ -27,7 +27,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo_transparent2.png" alt="sumunara logo">
@@ -76,7 +76,7 @@
 
     <!-- Details -->
     <div id="details" class="container">
-        <div class="row justify-content-around align-items-center">
+        <section class="row justify-content-around align-items-center">
             <div id="doughnut-chart-container" class="col-8 col-sm-6 col-md-4">
                 <canvas id="doughnut-chart"></canvas>
             </div>
@@ -94,23 +94,179 @@
                             <a href="#" id="noise" class="get-data">Noise: <span>Moderate</span></a>
                         </li>
 
+                        <div class="bar-container">
+                            <div id="noise-score" class="bar">Moderate</div>
+                        </div>
+
                         <li>
                             <a href="#" id="traffic-accident-rate" class="get-data">
                                 Traffic accident rate: <span>Pretty high</span>
                             </a>
                         </li>
 
+                        <div class="bar-container">
+                            <div id="traffic-accident-score" class="bar">Pretty high</div>
+                        </div>
+
                         <li>
                             <a href="#" id="crime-rate" class="get-data">Crime rate: <span>High</span></a>
                         </li>
+
+                        <div class="bar-container">
+                            <div id="crime-score" class="bar">High</div>
+                        </div>
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="bar-charts-container">
-            <canvas id="bar-charts" width="400" height="400"></canvas>
-        </div>
+        <section id="stats-details-container">
+            <div id="stats-details">
+                <!-- population-details -->
+                <ul id="population-details" class="container justify-content-around">
+                    <p class="stats-title">人口内訳</p>
+
+                    <li id="population-male" class="row">
+                        <div class="col">
+                            男：　
+                        </div>
+
+                        <div class="col-5">
+                            1,500人
+                        </div>
+                    </li>
+
+                    <li id="population-female" class="row">
+                        <div class="col">
+                            女：　
+                        </div>
+
+                        <div class="col-5">
+                            1,500人
+                        </div>
+                    </li>
+
+                    <li id="population-foreigner" class="row">
+                        <div class="col">
+                            外国人：　
+                        </div>
+
+                        <div class="col-5">
+                            1,500人
+                        </div>
+                    </li>
+                </ul>
+                <!-- population-details -->
+
+                <!-- noise-details -->
+                <ul id="noise-details" class="container justify-content-around">
+                    <p class="stats-title">騒音</p>
+
+                    <li id="noise-area" class="row">
+                        <div class="col">
+                            住吉１丁目の騒音レベル：　
+                        </div>
+
+                        <div class="col-5">
+                            130 dB
+                        </div>
+                    </li>
+                </ul>
+                <!-- noise-details -->
+
+                <!-- traffic-accident-details -->
+                <ul id="traffic-accident-details" class="container justify-content-around">
+                    <p class="stats-title">交通事故</p>
+
+                    <li id="fatal-accidents" class="row">
+                        <div class="col">
+                            死亡事故：　
+                        </div>
+
+                        <div class="col-5">
+                            67件
+                        </div>
+                    </li>
+
+                    <li id="serious-injury" class="row">
+                        <div class="col">
+                            重傷：　
+                        </div>
+
+                        <div class="col-5">
+                            251件
+                        </div>
+                    </li>
+
+                    <li id="minor-injury" class="row">
+                        <div class="col">
+                            軽傷：　
+                        </div>
+
+                        <div class="col-5">
+                            879件
+                        </div>
+                    </li>
+                </ul>
+                <!-- traffic-accident-details -->
+
+                <!-- crime-details -->
+                <ul id="crime-details" class="container justify-content-around">
+                    <p class="stats-title">犯罪</p>
+
+                    <li id="" class="row">
+                        <div class="col">
+                            ひったくり：　
+                        </div>
+
+                        <div class="col-5">
+                            1000件
+                        </div>
+                    </li>
+
+                    <li id="" class="row">
+                        <div class="col">
+                            車上荒らし：　
+                        </div>
+
+                        <div class="col-5">
+                            700件
+                        </div>
+                    </li>
+
+                    <li id="" class="row">
+                        <div class="col">
+                            バイク盗難：　
+                        </div>
+
+                        <div class="col-5">
+                            300件
+                        </div>
+                    </li>
+
+                    <li id="" class="row">
+                        <div class="col">
+                            自転車盗難：　
+                        </div>
+
+                        <div class="col-5">
+                            1000件
+                        </div>
+                    </li>
+
+                    <li id="" class="row">
+                        <div class="col">
+                            自販機荒らし：　
+                        </div>
+
+                        <div class="col-5">
+                            1000件
+                        </div>
+                    </li>
+                </ul>
+                <!-- crime-details -->
+            </div>
+        </section>
     </div>
     <!-- Details -->
 
@@ -218,7 +374,8 @@
 
     <!-- <script src="js/bootstrap.min.js"></script> -->
 
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script src="/scripts/charts.js"></script>
 </body>
 
 </html>
