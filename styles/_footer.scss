@@ -1,7 +1,7 @@
 // Footer
 #footer {
     margin-top: 4rem;
-    background: $background-color;
+    background: darken($color: $background-color, $amount: 20%);
 
     .row {
         .col-md-3 {

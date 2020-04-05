@@ -44,19 +44,22 @@
 
             .bar {
                 padding: 5px 5px 5px 1rem;
-                background-color: #4caf50;
-                color: white;
+                background-color: $bar-low;
+                color: #fff;
             }
         }
     }
 
     #stats-details {
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -70px;
+            visibility: hidden;
+        }
+
         ul {
             margin: 2rem auto;
-
-            .stats-title {
-                padding: 1rem 0;
-            }
 
             li {
                 padding: 1rem;
@@ -64,6 +67,15 @@
                 &:nth-child(even) {
                     background: rgba($color: $background-color, $alpha: 0.3);
                 }
+            }
+
+            .stats-title {
+                padding: 1rem 0;
+            }
+
+            .time-period {
+                @extend .stats-title;
+                font-size: 14px;
             }
         }
     }

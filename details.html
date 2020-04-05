@@ -46,15 +46,15 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">What is Sumunara?</a>
+                        <a class="nav-link" href="login.html">Log in</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign up</a>
+                        <a class="nav-link" href="signup.html">Sign up</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Log in</a>
+                        <a class="nav-link" href="#">Log out</a>
                     </li>
                 </ul>
             </div>
@@ -87,11 +87,12 @@
 
                     <ul>
                         <li>
-                            <a href="#" id="population" class="get-data">Population: <span>25,000</span></a>
+                            <a href="#population-anchor" id="population" class="get-data">Population:
+                                <span>25,000</span></a>
                         </li>
 
                         <li>
-                            <a href="#" id="noise" class="get-data">Noise: <span>Moderate</span></a>
+                            <a href="#noise-anchor" id="noise" class="get-data">Noise: <span>Moderate</span></a>
                         </li>
 
                         <div class="bar-container">
@@ -99,7 +100,7 @@
                         </div>
 
                         <li>
-                            <a href="#" id="traffic-accident-rate" class="get-data">
+                            <a href="#traffic-accident-anchor" id="traffic-accident-rate" class="get-data">
                                 Traffic accident rate: <span>Pretty high</span>
                             </a>
                         </li>
@@ -109,7 +110,7 @@
                         </div>
 
                         <li>
-                            <a href="#" id="crime-rate" class="get-data">Crime rate: <span>High</span></a>
+                            <a href="#crime-anchor" id="crime-rate" class="get-data">Crime rate: <span>High</span></a>
                         </li>
 
                         <div class="bar-container">
@@ -123,8 +124,14 @@
         <section id="stats-details-container">
             <div id="stats-details">
                 <!-- population-details -->
+                <a class="anchor" id="population-anchor"></a>
+
                 <ul id="population-details" class="container justify-content-around">
-                    <p class="stats-title">人口内訳</p>
+                    <div class="row justify-content-between align-items-end">
+                        <p class="stats-title">人口内訳</p>
+
+                        <p class="time-period">2019/6/19 時点</p>
+                    </div>
 
                     <li id="population-male" class="row">
                         <div class="col">
@@ -132,7 +139,8 @@
                         </div>
 
                         <div class="col-5">
-                            1,500人
+                            <span class="value">1,500</span>
+                            <span class="unit">人</span>
                         </div>
                     </li>
 
@@ -142,7 +150,8 @@
                         </div>
 
                         <div class="col-5">
-                            1,500人
+                            <span class="value">1,500</span>
+                            <span class="unit">人</span>
                         </div>
                     </li>
 
@@ -152,13 +161,24 @@
                         </div>
 
                         <div class="col-5">
-                            1,500人
+                            <span class="value">1,500</span>
+                            <span class="unit">人</span>
                         </div>
+                    </li>
+
+                    <li class="row total">
+                        <div class="col">
+                            合計：　
+                        </div>
+
+                        <div class="col-5 sum"></div>
                     </li>
                 </ul>
                 <!-- population-details -->
 
                 <!-- noise-details -->
+                <a class="anchor" id="noise-anchor"></a>
+
                 <ul id="noise-details" class="container justify-content-around">
                     <p class="stats-title">騒音</p>
 
@@ -175,8 +195,14 @@
                 <!-- noise-details -->
 
                 <!-- traffic-accident-details -->
+                <a class="anchor" id="traffic-accident-anchor"></a>
+
                 <ul id="traffic-accident-details" class="container justify-content-around">
-                    <p class="stats-title">交通事故</p>
+                    <div class="row justify-content-between align-items-end">
+                        <p class="stats-title">交通事故</p>
+
+                        <p class="time-period">2019/1/1 ~ 2019/12/31</p>
+                    </div>
 
                     <li id="fatal-accidents" class="row">
                         <div class="col">
@@ -184,7 +210,8 @@
                         </div>
 
                         <div class="col-5">
-                            67件
+                            <span class="value">67</span>
+                            <span class="unit">件</span>
                         </div>
                     </li>
 
@@ -194,7 +221,8 @@
                         </div>
 
                         <div class="col-5">
-                            251件
+                            <span class="value">251</span>
+                            <span class="unit">件</span>
                         </div>
                     </li>
 
@@ -204,64 +232,92 @@
                         </div>
 
                         <div class="col-5">
-                            879件
+                            <span class="value">563</span>
+                            <span class="unit">件</span>
                         </div>
+                    </li>
+
+                    <li class="row total">
+                        <div class="col">
+                            合計：　
+                        </div>
+
+                        <div class="col-5 sum"></div>
                     </li>
                 </ul>
                 <!-- traffic-accident-details -->
 
                 <!-- crime-details -->
-                <ul id="crime-details" class="container justify-content-around">
-                    <p class="stats-title">犯罪</p>
+                <a class="anchor" id="crime-anchor"></a>
 
-                    <li id="" class="row">
+                <ul id="crime-details" class="container justify-content-around">
+                    <div class="row justify-content-between align-items-end">
+                        <p class="stats-title">犯罪</p>
+
+                        <p class="time-period">2019/1/1 ~ 2019/12/31</p>
+                    </div>
+
+                    <li id="purse-snatching" class="row">
                         <div class="col">
                             ひったくり：　
                         </div>
 
                         <div class="col-5">
-                            1000件
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
                         </div>
                     </li>
 
-                    <li id="" class="row">
+                    <li id="car-break-ins" class="row">
                         <div class="col">
                             車上荒らし：　
                         </div>
 
                         <div class="col-5">
-                            700件
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
                         </div>
                     </li>
 
-                    <li id="" class="row">
+                    <li id="motorcycle-theft" class="row">
                         <div class="col">
                             バイク盗難：　
                         </div>
 
                         <div class="col-5">
-                            300件
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
                         </div>
                     </li>
 
-                    <li id="" class="row">
+                    <li id="bicycle-theft" class="row">
                         <div class="col">
                             自転車盗難：　
                         </div>
 
                         <div class="col-5">
-                            1000件
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
                         </div>
                     </li>
 
-                    <li id="" class="row">
+                    <li id="vending-machine-theft" class="row">
                         <div class="col">
                             自販機荒らし：　
                         </div>
 
                         <div class="col-5">
-                            1000件
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
                         </div>
+                    </li>
+
+                    <li class="row total">
+                        <div class="col">
+                            合計：　
+                        </div>
+
+                        <div class="col-5 sum"></div>
                     </li>
                 </ul>
                 <!-- crime-details -->
@@ -376,6 +432,7 @@
 
     <script type="module" src="scripts/main.js"></script>
     <script src="/scripts/charts.js"></script>
+    <script src="/scripts/sum.js"></script>
 </body>
 
 </html>

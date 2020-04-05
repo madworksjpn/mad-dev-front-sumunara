@@ -1,17 +1,20 @@
 .navbar.navbar-expand-lg {
     z-index: 10;
-    padding: 25px;
+    padding: 10px 1.5rem;
     transition: 0.6s;
     position: fixed;
     top: 0;
     width: 100%;
     font-weight: 700;
     font-size: 1.2rem;
+    background-color: #fff;
 
     .container {
         max-width: 90%;
 
         .navbar-brand {
+            color: $text-color;
+
             img {
                 height: 50px;
                 margin-right: 7px;
@@ -21,23 +24,30 @@
         .navbar-nav {
             justify-content: space-between;
             margin: 1rem 0 1rem auto;
+
+            .nav-link {
+                width: fit-content;
+                color: $text-color;
+
+                &:after {
+                    border-bottom: 3px solid $secondary-color;
+                    content: "";
+                    display: block;
+                    margin: 0.25em auto 0;
+                    transition: width 250ms ease-in-out 0s;
+                    width: 0;
+                }
+
+                &:hover:after {
+                    transition: width 100ms ease-in-out 0s;
+                    width: 100%;
+                }
+            }
         }
     }
 
     &.scrolled {
         padding: 5px 1.5rem !important;
-        background-color: $secondary-color !important;
+        background-color: $background-color !important;
     }
-}
-
-.dropdown-toggle::after {
-    transition: transform 0.15s linear;
-}
-
-.show.dropdown .dropdown-toggle::after {
-    transform: translateY(4px);
-}
-
-.dropdown-menu {
-    margin-top: 0;
 }

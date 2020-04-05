@@ -1,0 +1,25 @@
+// Sign up
+#signup-container {
+    margin: 160px auto 30px;
+    max-width: 550px;
+
+    .form-group {
+        #passwordHelpBlock {
+            display: none;
+        }
+
+        #inputPassword:focus + #passwordHelpBlock {
+            display: block;
+        }
+    }
+
+    button {
+        background: $primary-color;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Sumunara | Results</title>
+    <title>Sumunara | Sign Up</title>
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Sign up</a>
+                        <a class="nav-link" href="signup.html">Sign up <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
@@ -56,23 +56,46 @@
     </nav>
     <!-- Navbar -->
 
-    <!-- Results -->
-    <div id="results-container" class="container">
-        <div>
-            <h1 id="results-title" class="text-center mb-5">
-                Here's what we found...
-            </h1>
+    <!-- Sign up -->
+    <form id="signup-container">
+        <div class="form-group">
+            <label for="inputUserName">Username</label>
+
+            <input type="text" class="form-control" id="inputUserName">
         </div>
 
-        <ul>
-            <li class="mb-3"><a href="#">住吉１丁目</a></li>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
 
-            <li class="mb-3"><a href="#">住吉２丁目</a></li>
+            <input type="email" class="form-control" id="inputEmail">
+        </div>
 
-            <li class="mb-3"><a href="#">住吉３丁目</a></li>
-        </ul>
-    </div>
-    <!-- Results -->
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+
+            <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+
+            <small id="passwordHelpBlock" class="form-text text-muted">
+                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces,
+                special characters, or emoji.
+            </small>
+        </div>
+
+        <div class="form-group">
+            <label for="inputConfirmPassword">Confirm password</label>
+
+            <input type="password" class="form-control" id="inputConfirmPassword">
+        </div>
+
+        <div class="form-group">
+            <label class="form-check-label"><input type="checkbox"> Remember me</label>
+        </div>
+
+        <button type="submit" class="btn btn-warning">Sign up</button>
+
+        <p>By signing up, you agree to our <a href="#">terms and conditions</a>.</p>
+    </form>
+    <!-- Sign up -->
 
     <!-- Footer -->
     <footer id="footer">

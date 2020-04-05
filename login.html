@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Sumunara | Results</title>
+    <title>Sumunara | Log In</title>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Log in</a>
+                        <a class="nav-link" href="login.html">Log in <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
@@ -56,23 +56,29 @@
     </nav>
     <!-- Navbar -->
 
-    <!-- Results -->
-    <div id="results-container" class="container">
-        <div>
-            <h1 id="results-title" class="text-center mb-5">
-                Here's what we found...
-            </h1>
+    <!-- Log in -->
+    <form id="login-container">
+        <div class="form-group">
+            <label for="inputUserName">Username or email</label>
+
+            <input type="text" class="form-control" id="inputUserName">
         </div>
 
-        <ul>
-            <li class="mb-3"><a href="#">住吉１丁目</a></li>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
 
-            <li class="mb-3"><a href="#">住吉２丁目</a></li>
+            <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+        </div>
 
-            <li class="mb-3"><a href="#">住吉３丁目</a></li>
-        </ul>
-    </div>
-    <!-- Results -->
+        <div class="form-group">
+            <label class="form-check-label"><input type="checkbox"> Remember me</label>
+        </div>
+
+        <button type="submit" class="btn btn-warning">Log in</button>
+
+        <p>or <a href="#">Forgot password</a></p>
+    </form>
+    <!-- Log in -->
 
     <!-- Footer -->
     <footer id="footer">

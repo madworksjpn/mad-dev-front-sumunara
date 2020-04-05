@@ -2,6 +2,7 @@
 export default function scrollNav() {
     const navbar = document.querySelector(".navbar-expand-lg");
     const navbarNav = document.querySelector(".navbar-nav");
+
     if (
         // document.documentElement.scrollTop > 80
         window.scrollY > 80

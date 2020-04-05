@@ -1,7 +1,15 @@
 // Variables
-$primary-color: #111111;
-$secondary-color: #ee2222;
-$background-color: rgb(211, 211, 211);
+$primary-color: #ffcb3c;
+$secondary-color: #46a96a;
+$text-color: #333;
+$background-color: #dfe0df;
+
+$bar-low: $secondary-color;
+$bar-high: #c1564b;
+$bar-mid: darken(
+    $color: $primary-color,
+    $amount: 10%
+);
 
 @mixin easeOut {
     transition: all 0.5s ease-out;
