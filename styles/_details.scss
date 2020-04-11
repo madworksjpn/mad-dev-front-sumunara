@@ -1,0 +1,82 @@
+// Details Summary
+#summary-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 160px auto 30px;
+}
+
+// Details
+#details {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    #doughnut-chart-container {
+        margin-bottom: 2rem;
+    }
+
+    #stats {
+        h4 {
+            margin-top: 1rem;
+        }
+
+        li {
+            font-size: 1.3rem;
+            margin: 1rem 0;
+        }
+
+        .bar-container {
+            width: 100%;
+            padding: 0;
+            background-color: $background-color;
+
+            #noise-score {
+                width: 50%;
+            }
+
+            #traffic-accident-score {
+                width: 60%;
+            }
+
+            #crime-score {
+                width: 80%;
+            }
+
+            .bar {
+                padding: 5px 5px 5px 1rem;
+                background-color: $bar-low;
+                color: #fff;
+            }
+        }
+    }
+
+    #stats-details {
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -70px;
+            visibility: hidden;
+        }
+
+        ul {
+            margin: 2rem auto;
+
+            li {
+                padding: 1rem;
+
+                &:nth-child(even) {
+                    background: rgba($color: $background-color, $alpha: 0.3);
+                }
+            }
+
+            .stats-title {
+                padding: 1rem 0;
+            }
+
+            .time-period {
+                @extend .stats-title;
+                font-size: 14px;
+            }
+        }
+    }
+}

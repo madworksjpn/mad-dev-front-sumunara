@@ -1,0 +1,15 @@
+// Log in
+#login-container {
+    margin: 160px auto 30px;
+    max-width: 550px;
+
+    button {
+        background: $primary-color;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

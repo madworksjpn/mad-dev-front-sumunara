@@ -1,0 +1,98 @@
+// Animation
+// fade up
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms;
+
+    &.appear {
+        opacity: 1;
+        animation: fadeUp 2.5s cubic-bezier(0.19, 0.85, 0.05, 0.94);
+        -webkit-animation: fadeUp 2.5s cubic-bezier(0.19, 0.85, 0.05, 0.94);
+        -moz-animation: fadeUp 2.5s cubic-bezier(0.19, 0.85, 0.05, 0.94);
+        -o-animation: fadeUp 2.5s cubic-bezier(0.19, 0.85, 0.05, 0.94);
+        -ms-animation: fadeUp 2.5s cubic-bezier(0.19, 0.85, 0.05, 0.94);
+    }
+
+    @keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(150px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @-moz-keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(150px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @-webkit-keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(150px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @-o-keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(150px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @-ms-keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(150px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+// slide in
+// .from-left {
+//     opacity: 0;
+//     transform: translateX(-50%);
+//     transition: opacity 250ms ease-out, transform 700ms ease-out;
+
+//     &.appear {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// .from-right {
+//     opacity: 0;
+//     transform: translateX(50%);
+//     transition: opacity 250ms ease-out, transform 700ms ease-out;
+
+//     &.appear {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }

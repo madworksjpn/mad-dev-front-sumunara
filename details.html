@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <title>Sumunara | Details</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_transparent2.png" alt="sumunara logo">
+                Sumunara
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Log in</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Details summary -->
+    <div id="summary-container" class="container">
+        <h1 id="summary-title" class="text-center mb-5">Everything about Sumiyoshi</h1>
+
+        <h3 id="summary-area" class="mb-3">Sumiyoshi</h3>
+
+        <p id="summary-notes" class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos, quod
+            consequuntur
+            qui incidunt fugiat quia nesciunt soluta assumenda unde?</p>
+    </div>
+    <!-- Details summary -->
+
+    <!-- Details -->
+    <div id="details" class="container">
+        <section class="row justify-content-around align-items-center">
+            <div id="doughnut-chart-container" class="col-8 col-sm-6 col-md-4">
+                <canvas id="doughnut-chart"></canvas>
+            </div>
+
+            <div id="stats" class="col-10 col-md-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h4>Lorem, ipsum dolor.</h4>
+
+                    <ul>
+                        <li>
+                            <a href="#population-anchor" id="population" class="get-data">Population:
+                                <span>25,000</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#noise-anchor" id="noise" class="get-data">Noise: <span>Moderate</span></a>
+                        </li>
+
+                        <div class="bar-container">
+                            <div id="noise-score" class="bar">Moderate</div>
+                        </div>
+
+                        <li>
+                            <a href="#traffic-accident-anchor" id="traffic-accident-rate" class="get-data">
+                                Traffic accident rate: <span>Pretty high</span>
+                            </a>
+                        </li>
+
+                        <div class="bar-container">
+                            <div id="traffic-accident-score" class="bar">Pretty high</div>
+                        </div>
+
+                        <li>
+                            <a href="#crime-anchor" id="crime-rate" class="get-data">Crime rate: <span>High</span></a>
+                        </li>
+
+                        <div class="bar-container">
+                            <div id="crime-score" class="bar">High</div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats-details-container">
+            <div id="stats-details">
+                <!-- population-details -->
+                <a class="anchor" id="population-anchor"></a>
+
+                <ul id="population-details" class="container justify-content-around">
+                    <div class="row justify-content-between align-items-end">
+                        <p class="stats-title">人口内訳</p>
+
+                        <p class="time-period">2019/6/19 時点</p>
+                    </div>
+
+                    <li id="population-male" class="row">
+                        <div class="col">
+                            男：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">1,500</span>
+                            <span class="unit">人</span>
+                        </div>
+                    </li>
+
+                    <li id="population-female" class="row">
+                        <div class="col">
+                            女：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">1,500</span>
+                            <span class="unit">人</span>
+                        </div>
+                    </li>
+
+                    <li id="population-foreigner" class="row">
+                        <div class="col">
+                            外国人：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">1,500</span>
+                            <span class="unit">人</span>
+                        </div>
+                    </li>
+
+                    <li class="row total">
+                        <div class="col">
+                            合計：　
+                        </div>
+
+                        <div class="col-5 sum"></div>
+                    </li>
+                </ul>
+                <!-- population-details -->
+
+                <!-- noise-details -->
+                <a class="anchor" id="noise-anchor"></a>
+
+                <ul id="noise-details" class="container justify-content-around">
+                    <p class="stats-title">騒音</p>
+
+                    <li id="noise-area" class="row">
+                        <div class="col">
+                            騒音レベル（日中）：　
+                        </div>
+
+                        <div class="col-5">
+                            130 dB
+                        </div>
+                    </li>
+
+                    <li id="noise-area" class="row">
+                        <div class="col">
+                            騒音レベル（夜間）：　
+                        </div>
+
+                        <div class="col-5">
+                            130 dB
+                        </div>
+                    </li>
+                </ul>
+                <!-- noise-details -->
+
+                <!-- traffic-accident-details -->
+                <a class="anchor" id="traffic-accident-anchor"></a>
+
+                <ul id="traffic-accident-details" class="container justify-content-around">
+                    <div class="row justify-content-between align-items-end">
+                        <p class="stats-title">交通事故</p>
+
+                        <p class="time-period">2019/1/1 ~ 2019/12/31</p>
+                    </div>
+
+                    <li id="fatal-accidents" class="row">
+                        <div class="col">
+                            死亡事故：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">67</span>
+                            <span class="unit">件</span>
+                        </div>
+                    </li>
+
+                    <li id="serious-injury" class="row">
+                        <div class="col">
+                            重傷：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">251</span>
+                            <span class="unit">件</span>
+                        </div>
+                    </li>
+
+                    <li id="minor-injury" class="row">
+                        <div class="col">
+                            軽傷：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">563</span>
+                            <span class="unit">件</span>
+                        </div>
+                    </li>
+
+                    <li class="row total">
+                        <div class="col">
+                            合計：　
+                        </div>
+
+                        <div class="col-5 sum"></div>
+                    </li>
+                </ul>
+                <!-- traffic-accident-details -->
+
+                <!-- crime-details -->
+                <a class="anchor" id="crime-anchor"></a>
+
+                <ul id="crime-details" class="container justify-content-around">
+                    <div class="row justify-content-between align-items-end">
+                        <p class="stats-title">犯罪</p>
+
+                        <p class="time-period">2019/1/1 ~ 2019/12/31</p>
+                    </div>
+
+                    <li id="purse-snatching" class="row">
+                        <div class="col">
+                            ひったくり：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
+                        </div>
+                    </li>
+
+                    <li id="car-break-ins" class="row">
+                        <div class="col">
+                            車上荒らし：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
+                        </div>
+                    </li>
+
+                    <li id="motorcycle-theft" class="row">
+                        <div class="col">
+                            バイク盗難：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
+                        </div>
+                    </li>
+
+                    <li id="bicycle-theft" class="row">
+                        <div class="col">
+                            自転車盗難：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
+                        </div>
+                    </li>
+
+                    <li id="vending-machine-theft" class="row">
+                        <div class="col">
+                            自販機荒らし：　
+                        </div>
+
+                        <div class="col-5">
+                            <span class="value">1000</span>
+                            <span class="unit">件</span>
+                        </div>
+                    </li>
+
+                    <li class="row total">
+                        <div class="col">
+                            合計：　
+                        </div>
+
+                        <div class="col-5 sum"></div>
+                    </li>
+                </ul>
+                <!-- crime-details -->
+            </div>
+        </section>
+    </div>
+    <!-- Details -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row mx-auto justify-content-center pt-4">
+                <div class="col-md-3 row justify-content-center">
+                    <h5 class="col-12">What is Sumunara?</h5>
+
+                    <ul class="list-unstyled col-12">
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 row justify-content-center">
+                    <h5 class="col-12">What is Sumunara?</h5>
+
+                    <ul class="list-unstyled col-12">
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 row justify-content-center">
+                    <h5 class="col-12">What is Sumunara?</h5>
+
+                    <ul class="list-unstyled col-12">
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="copyright" class="text-center row align-items-center">
+                <p><span id="year"></span> MAD Works, LLC</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script src="/scripts/charts.js"></script>
+    <script src="/scripts/sum.js"></script>
+</body>
+
+</html>

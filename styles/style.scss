@@ -1,0 +1,46 @@
+// === Import ===
+@import "./config";
+@import "./navbar";
+@import "./footer";
+@import "./index";
+@import "./results";
+@import "./details";
+@import "./signup";
+@import "./login";
+@import "./error";
+@import "./mobile";
+@import "./animation";
+
+// Google fonts
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
+
+// General stylings
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.container {
+    overflow: hidden;
+}
