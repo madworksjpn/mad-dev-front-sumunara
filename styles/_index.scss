@@ -9,7 +9,7 @@
 
     .container {
         max-width: 90%;
-        margin-bottom: 5vw;
+        margin-bottom: 8vw;
 
         .input-group {
             height: 80px;
@@ -21,6 +21,16 @@
 
             .btn {
                 padding: 1rem;
+            }
+        }
+
+        #match-list {
+            position: absolute;
+            z-index: 9;
+
+            .suggestions {
+                background: #fff;
+                padding: 1rem 1.5rem;
             }
         }
     }

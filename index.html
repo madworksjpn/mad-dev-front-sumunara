@@ -6,9 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -59,8 +56,8 @@
     <!-- Section - Home -->
     <section id="home">
         <div class="container">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Type in postal code or address..."
+            <div class="input-group">
+                <input type="text" id="search" class="form-control" placeholder="Type in postal code or address..."
                     aria-label="Type in postal code or address..." aria-describedby="basic-addon2">
 
                 <div class="input-group-append">
@@ -69,6 +66,8 @@
                     </button>
                 </div>
             </div>
+
+            <div id="match-list"></div>
         </div>
     </section>
     <!-- Section - Home -->
@@ -356,10 +355,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-
     <script type="module" src="scripts/main.js"></script>
     <script src="/scripts/animation.js"></script>
+    <script src="/scripts/autocomplete.js"></script>
 </body>
 
 </html>

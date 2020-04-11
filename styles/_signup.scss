@@ -1,25 +1,52 @@
 // Sign up
 #signup-container {
     margin: 160px auto 30px;
-    max-width: 550px;
+    max-width: 400px;
 
-    .form-group {
-        #passwordHelpBlock {
-            display: none;
-        }
+    #social-icons {
+        .btn {
+            width: 100%;
+            background: lightblue;
+            border: 1px solid black;
+            display: flex;
 
-        #inputPassword:focus + #passwordHelpBlock {
-            display: block;
+            .fab {
+                font-size: 1.5rem;
+            }
+
+            .col-10 {
+                text-align: left;
+            }
         }
     }
 
-    button {
-        background: $primary-color;
+    #show-form-btn {
         width: 100%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
+        background: $background-color;
     }
 
-    p {
-        font-size: 14px;
+    #form-email {
+        display: none;
+
+        .form-group {
+            // #passwordHelpBlock {
+            //     display: none;
+            // }
+
+            // #inputPassword:focus + #passwordHelpBlock {
+            //     display: block;
+            // }
+        }
+
+        button {
+            background: $primary-color;
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 }

@@ -11,13 +11,20 @@ window.onscroll = () => {
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
+    anchor.addEventListener("click", function (e) {
         e.preventDefault();
 
         document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
+            behavior: "smooth",
         });
     });
+});
+
+// Show signup form with email
+document.getElementById("show-form-btn").addEventListener("click", e => {
+    e.preventDefault;
+
+    document.getElementById("form-email").style.display = "block";
 });
 
 // Get the current year
