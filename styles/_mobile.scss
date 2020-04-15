@@ -50,6 +50,45 @@
             margin-bottom: 0;
         }
     }
+
+    // Sign up
+    #signup-container {
+        max-width: max-content;
+
+        #flex-container {
+            display: flex;
+        }
+
+        #show-form-btn {
+            display: none;
+        }
+
+        #signup-form {
+            display: block;
+        }
+    }
+
+    // Log in
+    #login-container {
+        max-width: max-content;
+
+        #flex-container {
+            display: flex;
+        }
+
+        #or {
+            &:before {
+                border-top: none;
+                border-right: 1px solid
+                    darken($color: $background-color, $amount: 30%);
+                margin: auto 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
 }
 
 // Tablets

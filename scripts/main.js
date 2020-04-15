@@ -20,11 +20,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Show signup form with email
+// Show signup form on click
 document.getElementById("show-form-btn").addEventListener("click", e => {
     e.preventDefault;
 
-    document.getElementById("form-email").style.display = "block";
+    document.getElementById("signup-form").style.display = "block";
 });
 
 // Get the current year

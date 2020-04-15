@@ -57,90 +57,97 @@
     <!-- Navbar -->
 
     <!-- Sign up -->
-    <form id="signup-container">
-        <h3>Sign up</h3>
+    <div id="signup-container" class="container">
+        <h3 class="text-center mb-4">Sign up</h3>
 
-        <p>Sign up with your social media account</p>
+        <div id="flex-container">
+            <!-- Social -->
+            <div>
+                <p class="text-center">Sign up with your social media account</p>
 
-        <div id="social-icons">
-            <button id="google" class="btn">
-                <div class="col-2"><i class="fab fa-google"></i></div>
+                <div id="social-icons">
+                    <button id="google" class="btn">
+                        <div class="col-2"><i class="fab fa-google"></i></div>
 
-                <div class="col-10 mx-auto"> Sign up with Google</div>
-            </button>
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Sign up with Google</div>
+                    </button>
 
-            <button id="facebook" class="btn">
-                <div class="col-2"><i class="fab fa-facebook-f"></i></div>
+                    <button id="facebook" class="btn">
+                        <div class="col-2"><i class="fab fa-facebook-f"></i></div>
 
-                <div class="col-10 mx-auto"> Sign up with Facebook</div>
-            </button>
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Sign up with Facebook</div>
+                    </button>
 
-            <button id="twitter" class="btn">
-                <div class="col-2"><i class="fab fa-twitter"></i></div>
+                    <button id="twitter" class="btn">
+                        <div class="col-2"><i class="fab fa-twitter"></i></div>
 
-                <div class="col-10 mx-auto"> Sign up with Twitter</div>
-            </button>
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Sign up with Twitter</div>
+                    </button>
 
-            <button id="instagram" class="btn">
-                <div class="col-2"><i class="fab fa-instagram"></i></div>
+                    <button id="instagram" class="btn">
+                        <div class="col-2"><i class="fab fa-instagram"></i></div>
 
-                <div class="col-10 mx-auto"> Sign up with Instagram</div>
-            </button>
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Sign up with Instagram</div>
+                    </button>
 
-            <button id="github" class="btn">
-                <div class="col-2"><i class="fab fa-github"></i></div>
+                    <button id="github" class="btn">
+                        <div class="col-2"><i class="fab fa-github"></i></div>
 
-                <div class="col-10 mx-auto"> Sign up with GitHub</div>
-            </button>
-        </div>
-
-        <p>Or</p>
-
-        <button id="show-form-btn" class="btn" type="button">
-            <i class="far fa-envelope"></i> Sign up with Email
-        </button>
-
-        <div id="form-email">
-            <div class="form-group">
-                <label for="inputUserName">Username</label>
-
-                <input type="text" class="form-control" id="inputUserName">
-
-                <div class="invalid-feedback">
-                    Name must be between 2 and 15 characters.
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Sign up with GitHub</div>
+                    </button>
                 </div>
             </div>
+            <!-- Social -->
 
-            <div class="form-group">
-                <label for="inputEmail">Email</label>
+            <p id="or" class="text-center"><span>or</span></p>
 
-                <input type="email" class="form-control" id="inputEmail">
+            <button id="show-form-btn" class="btn">
+                <i class="far fa-envelope"></i> Sign up with Email
+            </button>
 
-                <div class="invalid-feedback">
-                    Enter a valid email.
-                </div>
-            </div>
+            <!-- Email form -->
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="inputUserName">Username</label>
 
-            <div class="form-group">
-                <label for="inputPassword">Password</label>
+                    <input type="text" class="form-control" id="inputUserName">
 
-                <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
-
-                <small id="passwordHelpBlock" class="form-text text-muted">
-                    Your password must be longer than 8 characters, contain both upper case and lower case letters, a
-                    number, and
-                    must not contain spaces.
-                </small>
-
-                <div class="invalid-feedback">
-                    Make sure your password is longer than 8 characters, contains both upper case and lower case
-                    letters, a
-                    number,
-                    and
-                    does not contain spaces.
+                    <div class="invalid-feedback">
+                        Name must be between 2 and 15 characters.
+                    </div>
                 </div>
 
-                <!-- <div class="invalid-feedback">
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+
+                    <input type="email" class="form-control" id="inputEmail">
+
+                    <div class="invalid-feedback">
+                        Enter a valid email.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+
+                    <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                        Your password must be longer than 8 characters, contain both upper case and lower case letters,
+                        a
+                        number, and
+                        must not contain spaces.
+                    </small>
+
+                    <div class="invalid-feedback">
+                        Make sure your password is longer than 8 characters, contains both upper case and lower case
+                        letters, a
+                        number,
+                        and
+                        does not contain spaces.
+                    </div>
+
+                    <!-- <div class="invalid-feedback">
                 Password must be longer than 8 characters.
             </div>
 
@@ -155,28 +162,32 @@
             <div class="invalid-feedback">
                 Password must must not contain spaces.
             </div> -->
-            </div>
-
-            <div class="form-group">
-                <label for="inputConfirmPassword">Confirm password</label>
-
-                <input type="password" class="form-control" id="inputConfirmPassword">
-
-                <div class="invalid-feedback">
-                    Passwords do not match.
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label class="form-check-label"><input type="checkbox"> Remember me</label>
-            </div>
+                <div class="form-group">
+                    <label for="inputConfirmPassword">Confirm password</label>
 
-            <button type="submit" class="btn btn-warning">Sign up</button>
+                    <input type="password" class="form-control" id="inputConfirmPassword">
 
-            <p>By signing up, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+                    <div class="invalid-feedback">
+                        Passwords do not match.
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-warning">Sign up</button>
+
+                <p>By signing up, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.
+                </p>
+            </form>
+            <!-- Email form -->
         </div>
-    </form>
-    <!-- Sign up -->
+        <!-- Sign up -->
+    </div>
 
     <!-- Footer -->
     <footer id="footer">

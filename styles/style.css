@@ -282,59 +282,167 @@
 }
 
 #signup-container {
-  margin: 160px auto 30px;
+  margin: 140px auto 30px;
   max-width: 400px;
+}
+
+#signup-container #social-icons #google {
+  background: #ea4335;
+}
+
+#signup-container #social-icons #facebook {
+  background: #1877f2;
+}
+
+#signup-container #social-icons #twitter {
+  background: #1da1f2;
+}
+
+#signup-container #social-icons #instagram {
+  background: #c32aa3;
+}
+
+#signup-container #social-icons #github {
+  background: #211f1f;
 }
 
 #signup-container #social-icons .btn {
   width: 100%;
-  background: lightblue;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  color: #fff;
 }
 
 #signup-container #social-icons .btn .fab {
   font-size: 1.5rem;
 }
 
-#signup-container #social-icons .btn .col-10 {
+#signup-container #social-icons .btn .mx-auto {
   text-align: left;
+}
+
+#signup-container #or {
+  position: relative;
+  z-index: 1;
+  margin: 2rem;
+}
+
+#signup-container #or:before {
+  border-top: 1px solid #919591;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+#signup-container #or span {
+  background: #fff;
+  padding: 0 15px;
 }
 
 #signup-container #show-form-btn {
   width: 100%;
-  margin-bottom: 2rem;
   background: #dfe0df;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-#signup-container #form-email {
+#signup-container #signup-form {
   display: none;
 }
 
-#signup-container #form-email button {
+#signup-container #signup-form button {
   background: #ffcb3c;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem auto;
 }
 
-#signup-container #form-email p {
+#signup-container #signup-form p {
   font-size: 14px;
 }
 
 #login-container {
-  margin: 160px auto 30px;
-  max-width: 550px;
+  margin: 140px auto 30px;
+  max-width: 400px;
 }
 
-#login-container button {
+#login-container #social-icons #google {
+  background: #ea4335;
+}
+
+#login-container #social-icons #facebook {
+  background: #1877f2;
+}
+
+#login-container #social-icons #twitter {
+  background: #1da1f2;
+}
+
+#login-container #social-icons #instagram {
+  background: #c32aa3;
+}
+
+#login-container #social-icons #github {
+  background: #211f1f;
+}
+
+#login-container #social-icons .btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  color: #fff;
+}
+
+#login-container #social-icons .btn .fab {
+  font-size: 1.5rem;
+}
+
+#login-container #social-icons .btn .mx-auto {
+  text-align: left;
+}
+
+#login-container #or {
+  position: relative;
+  z-index: 1;
+  margin: 2rem;
+}
+
+#login-container #or:before {
+  border-top: 1px solid #919591;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+#login-container #or span {
+  background: #fff;
+  padding: 0 15px;
+}
+
+#login-container #login-form button {
   background: #ffcb3c;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem auto;
 }
 
-#login-container p {
+#login-container #login-form p {
   font-size: 14px;
 }
 
@@ -529,6 +637,41 @@
   }
   #details #doughnut-chart-container {
     margin-bottom: 0;
+  }
+  #signup-container {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  #signup-container #flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #signup-container #show-form-btn {
+    display: none;
+  }
+  #signup-container #signup-form {
+    display: block;
+  }
+  #login-container {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  #login-container #flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #login-container #or:before {
+    border-top: none;
+    border-right: 1px solid #919591;
+    margin: auto 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 

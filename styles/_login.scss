@@ -1,15 +1,80 @@
 // Log in
 #login-container {
-    margin: 160px auto 30px;
-    max-width: 550px;
+    margin: 140px auto 30px;
+    max-width: 400px;
 
-    button {
-        background: $primary-color;
-        width: 100%;
-        margin-bottom: 1.5rem;
+    #social-icons {
+        #google {
+            background: #ea4335;
+        }
+
+        #facebook {
+            background: #1877f2;
+        }
+
+        #twitter {
+            background: #1da1f2;
+        }
+
+        #instagram {
+            background: #c32aa3;
+        }
+
+        #github {
+            background: #211f1f;
+        }
+
+        .btn {
+            width: 100%;
+            display: flex;
+            padding: 0.5rem;
+            margin: 1rem auto;
+            color: #fff;
+
+            .fab {
+                font-size: 1.5rem;
+            }
+
+            .mx-auto {
+                text-align: left;
+            }
+        }
     }
 
-    p {
-        font-size: 14px;
+    #or {
+        position: relative;
+        z-index: 1;
+        margin: 2rem;
+
+        &:before {
+            border-top: 1px solid
+                darken($color: $background-color, $amount: 30%);
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 95%;
+            z-index: -1;
+        }
+
+        span {
+            background: #fff;
+            padding: 0 15px;
+        }
+    }
+
+    #login-form {
+        button {
+            background: $primary-color;
+            width: 100%;
+            margin: 1.5rem auto;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 }
