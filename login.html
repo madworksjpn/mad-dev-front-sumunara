@@ -62,7 +62,7 @@
 
         <div id="flex-container">
             <!-- Social -->
-            <div>
+            <div class="col">
                 <p class="text-center">Log in with your social media account</p>
 
                 <div id="social-icons">
@@ -99,18 +99,20 @@
             </div>
             <!-- Social -->
 
-            <p id="or" class="text-center"><span>or</span></p>
+            <div id="divider-wrapper">
+                <p id="or" class="text-center"><span>or</span></p>
+            </div>
 
             <!-- Email form -->
-            <form id="login-form">
+            <form id="login-form" class="col">
                 <div class="form-group">
-                    <label for="inputUserName">Username or email</label>
+                    <label for="inputUserName"><i class="fas fa-user mr-2"></i>Username or email</label>
 
                     <input type="text" class="form-control" id="inputUserName">
                 </div>
 
                 <div class="form-group">
-                    <label for="inputPassword">Password</label>
+                    <label for="inputPassword"><i class="fas fa-lock mr-2"></i>Password</label>
 
                     <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
                 </div>
