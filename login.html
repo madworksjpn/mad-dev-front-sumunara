@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7b4d01730d.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -54,27 +57,76 @@
     <!-- Navbar -->
 
     <!-- Log in -->
-    <form id="login-container">
-        <div class="form-group">
-            <label for="inputUserName">Username or email</label>
+    <div id="login-container" class="container">
+        <h3 class="text-center mb-4">Log in</h3>
 
-            <input type="text" class="form-control" id="inputUserName">
+        <div id="flex-container">
+            <!-- Social -->
+            <div>
+                <p class="text-center">Log in with your social media account</p>
+
+                <div id="social-icons">
+                    <button id="google" class="btn">
+                        <div class="col-2"><i class="fab fa-google"></i></div>
+
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Log in with Google</div>
+                    </button>
+
+                    <button id="facebook" class="btn">
+                        <div class="col-2"><i class="fab fa-facebook-f"></i></div>
+
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Log in with Facebook</div>
+                    </button>
+
+                    <button id="twitter" class="btn">
+                        <div class="col-2"><i class="fab fa-twitter"></i></div>
+
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Log in with Twitter</div>
+                    </button>
+
+                    <button id="instagram" class="btn">
+                        <div class="col-2"><i class="fab fa-instagram"></i></div>
+
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Log in with Instagram</div>
+                    </button>
+
+                    <button id="github" class="btn">
+                        <div class="col-2"><i class="fab fa-github"></i></div>
+
+                        <div class="col-10 col-sm-8 col-md-10 mx-auto"> Log in with GitHub</div>
+                    </button>
+                </div>
+            </div>
+            <!-- Social -->
+
+            <p id="or" class="text-center"><span>or</span></p>
+
+            <!-- Email form -->
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="inputUserName">Username or email</label>
+
+                    <input type="text" class="form-control" id="inputUserName">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+
+                    <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-warning">Log in</button>
+
+                <p>or <a href="#">Forgot password</a></p>
+            </form>
+            <!-- Email form -->
         </div>
-
-        <div class="form-group">
-            <label for="inputPassword">Password</label>
-
-            <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
-        </div>
-
-        <div class="form-group">
-            <label class="form-check-label"><input type="checkbox"> Remember me</label>
-        </div>
-
-        <button type="submit" class="btn btn-warning">Log in</button>
-
-        <p>or <a href="#">Forgot password</a></p>
-    </form>
+    </div>
     <!-- Log in -->
 
     <!-- Footer -->
