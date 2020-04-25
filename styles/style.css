@@ -70,7 +70,7 @@
 
 #footer .row .col-md-3 {
   display: -ms-grid;
-  display: grid;
+  /*display: grid;*/
   margin: 1rem;
   text-align: center;
   max-width: -webkit-fit-content;
