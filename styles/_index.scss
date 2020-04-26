@@ -50,7 +50,7 @@
 
             .card-img-top {
                 margin: auto;
-                width: 30%;
+                width: 15%;
             }
         }
     }
@@ -71,6 +71,7 @@
                     border-radius: 10px;
                     max-width: 400px;
                     padding: 0;
+                    max-height: 165px;
                 }
 
                 .media-body {
@@ -80,6 +81,10 @@
                     align-items: center;
                     max-width: 400px;
                     margin-top: 15px;
+
+                    p {
+                      font-size: 0.9rem;
+                    }
                 }
             }
         }
