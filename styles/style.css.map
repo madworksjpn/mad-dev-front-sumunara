@@ -14,6 +14,8 @@
         "_error.scss",
         "_mobile.scss",
         "_animation.scss"
+        "__resetpass.scss"
+        "__newpass.scss"
     ],
     "names": [],
     "file": "style.css"

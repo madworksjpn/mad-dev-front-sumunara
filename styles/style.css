@@ -575,6 +575,46 @@
   }
 }
 
+#forget-container {
+  margin: 160px auto 30px;
+  max-width: 550px;
+}
+
+#forget-container h1 {
+  margin-bottom: 1.5rem;
+}
+
+#forget-container .form-group {
+  margin-bottom: 1rem;
+}
+
+#forget-container .form-group .btn {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 100%;
+  padding: 5px 0;
+}
+
+#new-container {
+  margin: 160px auto 30px;
+  max-width: 550px;
+}
+
+#new-container h1 {
+  margin-bottom: 1.5rem;
+}
+
+#new-container .form-group {
+  margin-bottom: 1rem;
+}
+
+#new-container .form-group .btn {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 100%;
+  padding: 5px 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
