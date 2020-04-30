@@ -615,6 +615,45 @@
   padding: 5px 0;
 }
 
+#terms-container {
+  margin: 160px auto 30px;
+  max-width: 850px;
+}
+
+#terms-container .terms-contents {
+  margin-bottom: 40px;
+  border: solid 2px #D6D6D6;
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+
+#terms-container .terms-head {
+  margin-bottom: 2rem;
+}
+
+#terms-container .terms-head h1 {
+  margin-bottom: 3rem;
+}
+
+#terms-container h2 {
+  margin: 3rem 0 1.5rem;
+}
+
+#terms-container li {
+  font-size: 14px;
+}
+
+#terms-container .tR {
+  text-align: right;
+  margin-top: 50px;
+}
+
+#terms-container button {
+  background: #ffcb3c;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
