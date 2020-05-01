@@ -90,7 +90,7 @@
     }
 }
 
-// Tablets
+// Tablets (576px and up)
 @include screen-sm {
     // Details
     #details #stats-details ul li div.col {
@@ -98,7 +98,7 @@
     }
 }
 
-// Smartphones
+// Smartphones (up to 400px)
 @include screen-xs {
     // Section - Home
     #home .container {
