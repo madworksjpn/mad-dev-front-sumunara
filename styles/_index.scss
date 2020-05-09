@@ -1,87 +1,90 @@
 // Section - Home
 #home {
-    background: url("https://source.unsplash.com/JXUfF7HYfMo/1600x900") fixed;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    max-width: unset;
+	background: url("https://source.unsplash.com/JXUfF7HYfMo/1600x900") fixed;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	max-width: unset;
 
-    .container {
-        max-width: 90%;
-        margin-bottom: 8vw;
+	.container {
+		max-width: 90%;
+		margin-bottom: 8vw;
 
-        .input-group {
-            height: 80px;
+		.input-group {
+			height: 80px;
 
-            .form-control {
-                height: 80px;
-                padding: 1rem 1.5rem;
-            }
+			.form-control {
+				height: 80px;
+				padding: 1rem 1.5rem;
+			}
 
-            .btn {
-                padding: 1rem;
-            }
-        }
+			.btn {
+				padding: 1rem;
+			}
+		}
 
-        #match-list {
-            position: absolute;
-            z-index: 9;
+		#match-list {
+			position: absolute;
+			z-index: 9;
 
-            .suggestions {
-                background: #fff;
-                padding: 1rem 1.5rem;
-            }
-        }
-    }
+			.suggestions {
+				background: #fff;
+				padding: 1rem 1.5rem;
+			}
+		}
+	}
 }
 
 // Section - What is Sumunara
 #what-is-sumunara {
-    margin-top: 2rem;
+	margin-top: 2rem;
 
-    .col-lg-4 {
-        margin: 1rem 0;
+	.col-lg-4 {
+		margin: 1rem 0;
 
-        .card {
-            border: none;
-            width: 90%;
-            margin: auto;
+		.card {
+			border: none;
+			width: 90%;
+			margin: auto;
 
-            .card-img-top {
-                margin: auto;
-                width: 30%;
-            }
-        }
-    }
+			.card-img-top {
+				margin: auto;
+				width: 15%;
+			}
+		}
+	}
 }
 
 // Section - Areas
 #areas {
-    margin-top: 2rem;
+	margin-top: 2rem;
 
-    .container {
-        .col-lg-6 {
-            margin-bottom: 3rem;
+	.container {
+		.col-lg-6 {
+			margin-bottom: 3rem;
 
-            .media {
-                width: 90%;
+			.media {
+				width: 90%;
 
-                img {
-                    border-radius: 10px;
-                    max-width: 400px;
-                    padding: 0;
-                }
+				img {
+					border-radius: 10px;
+					padding: 0;
+				}
 
-                .media-body {
-                    height: 100%;
-                    margin-left: initial;
-                    display: flex;
-                    align-items: center;
-                    max-width: 400px;
-                    margin-top: 15px;
-                }
-            }
-        }
-    }
+				.media-body {
+					height: 100%;
+					margin-left: initial;
+					display: flex;
+					align-items: center;
+					max-width: 400px;
+					margin-top: 15px;
+
+					p {
+						font-size: 0.9rem;
+					}
+				}
+			}
+		}
+	}
 }

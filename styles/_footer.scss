@@ -1,38 +1,44 @@
 // Footer
 #footer {
-    margin-top: 4rem;
-    background: darken($color: $background-color, $amount: 20%);
+	margin-top: 4rem;
+	background: darken($color: $background-color, $amount: 20%);
 
-    .row {
-        .col-md-3 {
-            display: grid;
-            margin: 1rem;
-            text-align: center;
-            max-width: fit-content;
+	.row {
+		.col-md-3 {
+			//20200426upd shibazaki display: grid;
+			margin: 1rem;
+			text-align: center;
+			max-width: fit-content;
 
-            h5 {
-                margin: 0;
-                padding: 1rem 0;
-            }
+			h5 {
+				margin: 0;
+				padding: 0 0 1.3rem 0;
+			}
 
-            ul {
-                padding: 0;
+			ul {
+				padding: 0;
 
-                li {
-                    padding-bottom: 0.5rem;
-                }
-            }
-        }
-    }
+				li {
+					padding-bottom: 0.5rem;
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
 
-    #copyright {
-        height: 75px;
-        margin: auto;
-        border-top: solid 1px black;
+	#copyright {
+		height: 75px;
+		margin: auto;
+		border-top: solid 1px black;
 
-        p {
-            display: inline-block;
-            margin: auto;
-        }
-    }
+		img {
+			height: 50px;
+			margin-right: 7px;
+		}
+
+		p {
+			display: inline-block;
+			margin: auto;
+		}
+	}
 }

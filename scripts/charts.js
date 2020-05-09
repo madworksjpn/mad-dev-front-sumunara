@@ -31,7 +31,7 @@ const doughnutChart = new Chart(doughnutCtx, {
 
 // Text inside of the doughnut
 Chart.pluginService.register({
-    beforeDraw: function(chart) {
+    beforeDraw: function (chart) {
         if (chart.options.centertext) {
             const width = chart.chart.width,
                 height = chart.chart.height,

@@ -10,37 +10,40 @@
 @import "./error";
 @import "./mobile";
 @import "./animation";
+@import "./resetpass";
+@import "./newpass";
+@import "./terms";
 
 // Google fonts
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
 
 // General stylings
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "Noto Sans JP", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Noto Sans JP", sans-serif;
 }
 
 a {
-    color: inherit;
+	color: inherit;
 }
 
 section {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
 .h-100px {
-    height: 100px;
+	height: 100px;
 }
 
 .h-200 {
-    height: 200px;
+	height: 200px;
 }
 
 .h-300 {
-    height: 300px;
+	height: 300px;
 }
 
 .container {
-    overflow: hidden;
+	overflow: hidden;
 }

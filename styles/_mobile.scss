@@ -1,108 +1,148 @@
 // Wide screens (1200px and up)
 @include screen-xl {
-    // Navbar
-    .navbar.navbar-expand-lg .container ul.navbar-nav {
-        width: 60%;
-    }
+	// Navbar
+	.navbar.navbar-expand-lg .container ul.navbar-nav {
+		width: 60%;
+	}
 }
 
 // Large devices (desktops, 992px and up)
 @include screen-lg {
-    // Navbar
-    .navbar.navbar-expand-lg .container .navbar-nav {
-        width: 70%;
-        margin: 0 0 0 auto;
-    }
+	// Navbar
+	.navbar.navbar-expand-lg .container .navbar-nav {
+		width: 70%;
+		margin: 0 0 0 auto;
+	}
 
-    // Section - What is Sumunara
-    #what-is-sumunara .col-lg-4 .card .card-img-top {
-        width: 50%;
-    }
+	// Section - What is Sumunara
+	#what-is-sumunara .col-lg-4 .card .card-img-top {
+		width: 25%;
+	}
+
+	#areas .container .col-lg-6 .media {
+		img {
+			width: 250px;
+			height: 180px;
+		}
+	}
 }
 
 // Medium devices (tablets, 768px and up)
 @include screen-md {
-    // Section - Areas
-    #areas .container .col-lg-6 .media {
-        img {
-            max-width: 250px;
-        }
+	// Section - Areas
+	#areas .container .col-lg-6 .media {
+		img {
+			width: 250px;
+			height: 180px;
+		}
 
-        .media-body {
-            margin-top: initial;
-            padding-left: 30px;
-            padding-right: 0;
-        }
-    }
+		.media-body {
+			margin-top: initial;
+			padding-left: 30px;
+			padding-right: 0;
+		}
+	}
+	// Footer
+	#footer .row .col-md-3 {
+		text-align: left;
+		margin: 16px;
+		padding: 0 15px;
+	}
 
-    // Footer
-    #footer .row .col-md-3 {
-        text-align: left;
-    }
+	// Details
+	#details {
+		.row.justify-content-around {
+			margin-bottom: 2rem;
+		}
 
-    // Details
-    #details {
-        .row.justify-content-around {
-            margin-bottom: 2rem;
-        }
+		#doughnut-chart-container {
+			margin-bottom: 0;
+		}
+	}
 
-        #doughnut-chart-container {
-            margin-bottom: 0;
-        }
-    }
+	// Sign up
+	#signup-container {
+		max-width: max-content;
 
-    // Sign up
-    #signup-container {
-        max-width: max-content;
+		#flex-container {
+			display: flex;
+		}
 
-        #flex-container {
-            display: flex;
-        }
+		#show-form-btn {
+			display: none;
+		}
 
-        #show-form-btn {
-            display: none;
-        }
+		#signup-form {
+			display: block;
+		}
+	}
 
-        #signup-form {
-            display: block;
-        }
-    }
+	// Log in
+	#login-container {
+		max-width: max-content;
 
-    // Log in
-    #login-container {
-        max-width: max-content;
+		#flex-container {
+			display: flex;
+		}
 
-        #flex-container {
-            display: flex;
-        }
-
-        #or {
-            &:before {
-                border-top: none;
-                border-right: 1px solid
-                    darken($color: $background-color, $amount: 30%);
-                margin: auto 0;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-            }
-        }
-    }
+		#or {
+			&:before {
+				border-top: none;
+				border-right: 1px solid
+					darken($color: $background-color, $amount: 30%);
+				margin: auto 0;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
 }
 
 // Tablets
 @include screen-sm {
-    // Details
-    #details #stats-details ul li div.col {
-        padding-left: 50px;
-    }
+	// Details
+	#details #stats-details ul li div.col {
+		padding-left: 50px;
+	}
+	// footer
+	footer {
+		h5 {
+			border-bottom: solid 1px black;
+		}
+	}
 }
 
 // Smartphones
 @include screen-xs {
-    // Section - Home
-    #home .container {
-        max-width: 100%;
-    }
+	// Section - Home
+	#home .container {
+		max-width: 100%;
+	}
+	// Section - Areas
+	#areas {
+		.container .col-lg-6 .media {
+			img {
+				max-width: 250px;
+			}
+		}
+		a.row.align-items-center {
+			flex-direction: column;
+		}
+	}
+	// footer
+	footer {
+		h5 {
+			border-bottom: solid 1px black;
+		}
+	}
+	#footer .row {
+		display: block;
+
+		.col-md-3 {
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
 }
