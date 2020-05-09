@@ -283,7 +283,7 @@
 
 #signup-container {
   margin: 140px auto 30px;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 #signup-container #social-icons #google {
@@ -328,6 +328,7 @@
   position: relative;
   z-index: 1;
   margin: 2rem;
+  height: 100%;
 }
 
 #signup-container #or:before {
@@ -345,7 +346,7 @@
 
 #signup-container #or span {
   background: #fff;
-  padding: 0 15px;
+  padding: 15px;
 }
 
 #signup-container #show-form-btn {
@@ -371,7 +372,7 @@
 
 #login-container {
   margin: 140px auto 30px;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 #login-container #social-icons #google {
@@ -416,6 +417,7 @@
   position: relative;
   z-index: 1;
   margin: 2rem;
+  height: 100%;
 }
 
 #login-container #or:before {
@@ -433,7 +435,19 @@
 
 #login-container #or span {
   background: #fff;
-  padding: 0 15px;
+  padding: 15px;
+}
+
+#login-container #login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #login-container #login-form button {
@@ -638,40 +652,44 @@
   #details #doughnut-chart-container {
     margin-bottom: 0;
   }
-  #signup-container {
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
-  }
-  #signup-container #flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #signup-container #show-form-btn {
-    display: none;
-  }
-  #signup-container #signup-form {
-    display: block;
-  }
+  #signup-container,
   #login-container {
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
+    max-width: 1000px;
   }
+  #signup-container #flex-container,
   #login-container #flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #login-container #or:before {
+  #signup-container #divider-wrapper,
+  #login-container #divider-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #signup-container #divider-wrapper #or:before,
+  #login-container #divider-wrapper #or:before {
     border-top: none;
-    border-right: 1px solid #919591;
-    margin: auto 0;
+    border-left: 1px solid #919591;
+    left: 50%;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  }
+  #signup-container #divider-wrapper #or span,
+  #login-container #divider-wrapper #or span {
+    position: relative;
+    top: 45%;
+  }
+  #signup-container #btn-wrapper,
+  #login-container #btn-wrapper {
+    display: none;
+  }
+  #signup-container #signup-form,
+  #login-container #signup-form {
+    display: block;
   }
 }
 

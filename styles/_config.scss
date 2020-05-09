@@ -37,7 +37,7 @@ $bar-mid: darken(
 	}
 }
 
-// Desktops $ Laptops
+// Desktops & Laptops
 @mixin screen-lg {
 	@media screen and (min-width: 992px) {
 		@content;

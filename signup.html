@@ -87,7 +87,7 @@
 
 			<div id="flex-container">
 				<!-- Social -->
-				<div>
+				<div class="col">
 					<p class="text-center">
 						ソーシャルメディアアカウントでサインアップする
 					</p>
@@ -146,16 +146,22 @@
 				</div>
 				<!-- Social -->
 
-				<p id="or" class="text-center"><span>または</span></p>
+				<div id="divider-wrapper">
+					<p id="or" class="text-center"><span>or</span></p>
+				</div>
 
-				<button id="show-form-btn" class="btn">
-					<i class="far fa-envelope"></i> メールでサインアップ
-				</button>
+				<div id="btn-wrapper" class="col">
+					<button id="show-form-btn" class="btn">
+						<i class="far fa-envelope"></i>メールでサインアップ
+					</button>
+				</div>
 
 				<!-- Email form -->
-				<form id="signup-form">
+				<form id="signup-form" class="col">
 					<div class="form-group">
-						<label for="inputUserName">Username</label>
+						<label for="inputUserName"
+							><i class="fas fa-user mr-2"></i>Username</label
+						>
 
 						<input
 							type="text"
@@ -169,7 +175,9 @@
 					</div>
 
 					<div class="form-group">
-						<label for="inputEmail">Email</label>
+						<label for="inputEmail"
+							><i class="far fa-envelope mr-2"></i>Email</label
+						>
 
 						<input
 							type="email"
@@ -183,7 +191,9 @@
 					</div>
 
 					<div class="form-group">
-						<label for="inputPassword">Password</label>
+						<label for="inputPassword"
+							><i class="fas fa-lock mr-2"></i>Password</label
+						>
 
 						<input
 							type="password"
@@ -226,7 +236,8 @@
 
 					<div class="form-group">
 						<label for="inputConfirmPassword"
-							>Confirm password</label
+							><i class="fas fa-lock mr-2"></i>Confirm
+							password</label
 						>
 
 						<input

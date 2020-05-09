@@ -32,8 +32,7 @@
 	// Section - Areas
 	#areas .container .col-lg-6 .media {
 		img {
-			width: 250px;
-			height: 180px;
+			max-width: 250px;
 		}
 
 		.media-body {
@@ -42,11 +41,10 @@
 			padding-right: 0;
 		}
 	}
+
 	// Footer
 	#footer .row .col-md-3 {
 		text-align: left;
-		margin: 16px;
-		padding: 0 15px;
 	}
 
 	// Details
@@ -60,15 +58,36 @@
 		}
 	}
 
-	// Sign up
-	#signup-container {
-		max-width: max-content;
+	// Sign up, Log in
+	#signup-container,
+	#login-container {
+		max-width: 1000px;
 
 		#flex-container {
 			display: flex;
 		}
 
-		#show-form-btn {
+		#divider-wrapper {
+			display: flex;
+			align-items: center;
+
+			#or {
+				&:before {
+					border-top: none;
+					border-left: 1px solid
+						darken($color: $background-color, $amount: 30%);
+					left: 50%;
+					top: 0;
+				}
+
+				span {
+					position: relative;
+					top: 45%;
+				}
+			}
+		}
+
+		#btn-wrapper {
 			display: none;
 		}
 
@@ -76,31 +95,9 @@
 			display: block;
 		}
 	}
-
-	// Log in
-	#login-container {
-		max-width: max-content;
-
-		#flex-container {
-			display: flex;
-		}
-
-		#or {
-			&:before {
-				border-top: none;
-				border-right: 1px solid
-					darken($color: $background-color, $amount: 30%);
-				margin: auto 0;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-			}
-		}
-	}
 }
 
-// Tablets
+// Tablets (576px and up)
 @include screen-sm {
 	// Details
 	#details #stats-details ul li div.col {
@@ -114,7 +111,7 @@
 	}
 }
 
-// Smartphones
+// Smartphones (up to 400px)
 @include screen-xs {
 	// Section - Home
 	#home .container {
