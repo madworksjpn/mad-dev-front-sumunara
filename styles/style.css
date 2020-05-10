@@ -363,10 +363,6 @@
   margin-bottom: 2rem;
 }
 
-#signup-container #signup-form {
-  display: none;
-}
-
 #signup-container #signup-form button {
   background: #ffcb3c;
   width: 100%;
