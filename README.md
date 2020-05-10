@@ -1,3 +1,3 @@
 # mad-dev-front-sumunara
 
-Repository for projects Sumunara frontend
+Repository for Sumunara frontend

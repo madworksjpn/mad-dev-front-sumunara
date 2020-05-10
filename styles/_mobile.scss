@@ -33,6 +33,7 @@
 	#areas .container .col-lg-6 .media {
 		img {
 			max-width: 250px;
+			height: 180px;
 		}
 
 		.media-body {
@@ -45,6 +46,8 @@
 	// Footer
 	#footer .row .col-md-3 {
 		text-align: left;
+		margin: 16px;
+		padding: 0 15px;
 	}
 
 	// Details
@@ -103,7 +106,8 @@
 	#details #stats-details ul li div.col {
 		padding-left: 50px;
 	}
-	// footer
+
+	// Footer
 	footer {
 		h5 {
 			border-bottom: solid 1px black;
@@ -117,6 +121,7 @@
 	#home .container {
 		max-width: 100%;
 	}
+
 	// Section - Areas
 	#areas {
 		.container .col-lg-6 .media {
@@ -128,12 +133,14 @@
 			flex-direction: column;
 		}
 	}
-	// footer
+
+	// Footer
 	footer {
 		h5 {
 			border-bottom: solid 1px black;
 		}
 	}
+
 	#footer .row {
 		display: block;
 

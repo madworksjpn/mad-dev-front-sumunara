@@ -20,12 +20,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Show signup form on click
-document.getElementById("show-form-btn").addEventListener("click", e => {
-    e.preventDefault;
-
-    document.getElementById("signup-form").style.display = "block";
-});
-
 // Get the current year
 document.getElementById("year").innerHTML = new Date().getFullYear();

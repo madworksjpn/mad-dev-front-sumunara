@@ -1,39 +1,39 @@
 // Terms and Conditions
 #terms-container {
-    margin: 160px auto 30px;
-    max-width: 850px;
+	margin: 160px auto 30px;
+	max-width: 850px;
 
-    .terms-contents {
-      margin-bottom: 40px;
-      border: solid 2px #D6D6D6;
-      border-radius: 10px;
-      padding: 40px 60px;
-    }
+	.terms-contents {
+		margin-bottom: 40px;
+		border: solid 2px #d6d6d6;
+		border-radius: 10px;
+		padding: 40px 60px;
+	}
 
-    .terms-head {
-      margin-bottom: 2rem;
+	.terms-head {
+		margin-bottom: 2rem;
 
-      h1 {
-        margin-bottom: 3rem;
-      }
-    }
+		h1 {
+			margin-bottom: 3rem;
+		}
+	}
 
-    h2 {
-      margin:3rem 0 1.5rem;
-    }
+	h2 {
+		margin: 3rem 0 1.5rem;
+	}
 
-    li {
-        font-size: 14px;
-    }
+	li {
+		font-size: 14px;
+	}
 
-    .tR {
-      text-align: right;
-      margin-top: 50px;
-    }
+	.tR {
+		text-align: right;
+		margin-top: 50px;
+	}
 
-    button {
-        background: $primary-color;
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
+	button {
+		background: $primary-color;
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
 }
