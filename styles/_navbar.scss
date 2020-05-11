@@ -11,7 +11,7 @@
 	border-bottom: 1px solid gray;
 
 	.container {
-		max-width: 90%;
+		// max-width: 90%;
 
 		.navbar-brand {
 			color: $text-color;
@@ -29,6 +29,7 @@
 			.nav-link {
 				width: fit-content;
 				color: $text-color;
+				margin-left: 20px;
 
 				&:after {
 					border-bottom: 3px solid $secondary-color;
