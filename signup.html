@@ -25,7 +25,7 @@
 		<link rel="icon" type="image/png" href="images/favicon.png" />
 		<link rel="stylesheet" href="./styles/style.css" />
 
-		<title>Sumunara | Sign Up</title>
+		<title>Sumunara | アカウント作成</title>
 	</head>
 
 	<body>
@@ -62,7 +62,7 @@
 						</li> -->
 
 						<li class="nav-item">
-							<a class="nav-link" href="login.html">Log in</a>
+							<a class="nav-link" href="login.html">ログイン</a>
 						</li>
 
 						<!-- <li class="nav-item">
@@ -83,7 +83,7 @@
 
 		<!-- Sign up -->
 		<div id="signup-container" class="container">
-			<h3 class="text-center mb-4">Sign up</h3>
+			<h3 class="text-center mb-4">Sumunaraアカウントの作成</h3>
 
 			<div id="flex-container">
 				<!-- Social -->
@@ -163,7 +163,7 @@
 				<form id="signup-form" class="col">
 					<div class="form-group">
 						<label for="inputUserName"
-							><i class="fas fa-user mr-2"></i>Username</label
+							><i class="fas fa-user mr-2"></i>ユーザー名</label
 						>
 
 						<input
@@ -173,13 +173,14 @@
 						/>
 
 						<div class="invalid-feedback">
-							Name must be between 2 and 15 characters.
+							ユーザー名は2～15文字以内で入力してください
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="inputEmail"
-							><i class="fas fa-envelope mr-2"></i>Email</label
+							><i class="fas fa-envelope mr-2"></i
+							>メールアドレス</label
 						>
 
 						<input
@@ -189,13 +190,13 @@
 						/>
 
 						<div class="invalid-feedback">
-							Enter a valid email.
+							有効なメールアドレスを入力してください
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="inputPassword"
-							><i class="fas fa-lock mr-2"></i>Password</label
+							><i class="fas fa-lock mr-2"></i>パスワード</label
 						>
 
 						<input
@@ -209,15 +210,11 @@
 							id="passwordHelpBlock"
 							class="form-text text-muted"
 						>
-							Your password must be longer than 8 characters,
-							contain both upper case and lower case letters, a
-							number, and must not contain spaces.
+							半角英数8文字以上で、大文字と小文字、数字を含み、スペースを含まないパスワードを入力してください
 						</small>
 
 						<div class="invalid-feedback">
-							Make sure your password is longer than 8 characters,
-							contains both upper case and lower case letters, a
-							number, and does not contain spaces.
+							パスワードが半角英数8文字以上で、大文字と小文字、数字を含み、スペースを含まないことを確認してください
 						</div>
 
 						<!-- <div class="invalid-feedback">
@@ -239,8 +236,8 @@
 
 					<div class="form-group">
 						<label for="inputConfirmPassword"
-							><i class="fas fa-lock mr-2"></i>Confirm
-							password</label
+							><i class="fas fa-lock mr-2"></i
+							>パスワードを再入力</label
 						>
 
 						<input
@@ -250,18 +247,25 @@
 						/>
 
 						<div class="invalid-feedback">
-							Passwords do not match.
+							パスワードが一致しません
 						</div>
 					</div>
 
 					<button type="submit" class="btn btn-warning">
-						Sign up
+						アカウント作成
 					</button>
 
 					<p>
-						By signing up, you agree to our
-						<a href="#">Privacy Policy</a> and
-						<a href="#">Terms of Service</a>.
+						新規登録すると、
+						<a href="#">利用規約</a>
+						<!-- および
+						<a href="#">プライバシー規約</a> -->
+						に同意したとみなされます。
+					</p>
+
+					<p>
+						すでにアカウントをお持ちの方
+						<a href="login.html">ログイン</a>
 					</p>
 				</form>
 				<!-- Email form -->

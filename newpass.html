@@ -25,7 +25,7 @@
 		<link rel="icon" type="image/png" href="images/favicon.png" />
 		<link rel="stylesheet" href="./styles/style.css" />
 
-		<title>Sumunara | New Password</title>
+		<title>Sumunara | 新しいパスワードの設定</title>
 	</head>
 
 	<body>
@@ -102,12 +102,7 @@
 					><i class="fas fa-key mr-2"></i>確認コード</label
 				>
 
-				<input
-					type="text"
-					class="form-control"
-					id="inputVerifyCode"
-					placeholder="確認コードを入力してください"
-				/>
+				<input type="text" class="form-control" id="inputVerifyCode" />
 			</div>
 
 			<div class="form-group">
@@ -115,12 +110,11 @@
 					><i class="fas fa-lock mr-2"></i>新しいパスワード</label
 				>
 
-				<input
-					type="text"
-					class="form-control"
-					id="inputNewPassword"
-					placeholder="半角英数〇文字以上で入力してください"
-				/>
+				<input type="text" class="form-control" id="inputNewPassword" />
+
+				<small id="passwordHelpBlock" class="form-text text-muted">
+					半角英数8文字以上で、大文字と小文字、数字を含み、スペースを含まないパスワードを入力してください
+				</small>
 			</div>
 
 			<!-- <div class="form-group margin-top"> -->
