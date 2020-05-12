@@ -3,6 +3,10 @@
 	margin-top: 4rem;
 	background: darken($color: $background-color, $amount: 20%);
 
+	a {
+		color: inherit;
+	}
+
 	.row {
 		.col-md-3 {
 			//20200426upd shibazaki display: grid;

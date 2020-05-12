@@ -25,7 +25,11 @@
 }
 
 a {
-	color: inherit;
+	color: $secondary-color;
+
+	&:hover {
+		color: #c1564c;
+	}
 }
 
 section {

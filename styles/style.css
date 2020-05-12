@@ -65,6 +65,10 @@
   background: #abaeab;
 }
 
+#footer a {
+  color: inherit;
+}
+
 #footer .row .col-md-3 {
   margin: 1rem;
   text-align: center;
@@ -837,7 +841,11 @@
 }
 
 a {
-  color: inherit;
+  color: #46a96a;
+}
+
+a:hover {
+  color: #c1564c;
 }
 
 section {
