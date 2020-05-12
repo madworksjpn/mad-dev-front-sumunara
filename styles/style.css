@@ -108,7 +108,7 @@
 }
 
 #home {
-  background: url("https://source.unsplash.com/JXUfF7HYfMo/1600x900") fixed;
+  background: url("https://source.unsplash.com/JXUfF7HYfMo/1600x900") no-repeat center fixed;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,7 +123,7 @@
 }
 
 #home .container {
-  margin-bottom: 8vw;
+  margin-bottom: 10vw;
 }
 
 #home .container .input-group {
