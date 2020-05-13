@@ -3,6 +3,14 @@
 	margin: 140px auto 30px;
 	max-width: 550px;
 
+	a {
+		color: $secondary-color;
+
+		&:hover {
+			color: #c1564c;
+		}
+	}
+
 	#social-icons {
 		#google {
 			background: #ea4335;
