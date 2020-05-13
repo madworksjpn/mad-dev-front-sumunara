@@ -5,6 +5,11 @@
 	// 	// With signup and login links
 	// 	width: 60%;
 	// }
+
+	// Section - Home
+	#home div.container {
+		margin-bottom: 10vw;
+	}
 }
 
 // Large devices (desktops, 992px and up)
@@ -30,10 +35,20 @@
 			height: 180px;
 		}
 	}
+
+	// Footer
+	footer#footer h5::after {
+		width: 100%;
+	}
 }
 
 // Medium devices (tablets, 768px and up)
 @include screen-md {
+	// Section - Home
+	#home .container {
+		margin-bottom: 15vw;
+	}
+
 	// Section - Areas
 	#areas .container .col-lg-6 .media {
 		img {
@@ -103,6 +118,13 @@
 			display: block;
 		}
 	}
+
+	// Terms and Conditions
+	form#terms-container {
+		div.terms-contents {
+			padding: 40px 60px;
+		}
+	}
 }
 
 // Tablets (576px and up)
@@ -112,11 +134,24 @@
 		padding-left: 50px;
 	}
 
-	// Footer
-	footer {
-		h5 {
-			border-bottom: solid 1px black;
+	// Terms and Conditions
+	form#terms-container {
+		.terms-contents {
+			padding: 30px;
 		}
+
+		.terms-head h2 {
+			margin-bottom: 3rem;
+		}
+
+		h3 {
+			margin: 3rem 0 1.5rem;
+		}
+	}
+
+	// Footer
+	#footer h5::after {
+		width: 30%;
 	}
 }
 
@@ -134,15 +169,9 @@
 				max-width: 250px;
 			}
 		}
+
 		a.row.align-items-center {
 			flex-direction: column;
-		}
-	}
-
-	// Footer
-	footer {
-		h5 {
-			border-bottom: solid 1px black;
 		}
 	}
 

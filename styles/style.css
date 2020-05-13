@@ -65,26 +65,15 @@
   background: #abaeab;
 }
 
-#footer .row .col-md-3 {
-  margin: 1rem;
-  text-align: center;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+#footer h5::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid black;
 }
 
-#footer .row .col-md-3 h5 {
-  margin: 0;
-  padding: 0 0 1.3rem 0;
-}
-
-#footer .row .col-md-3 ul {
-  padding: 0;
-}
-
-#footer .row .col-md-3 ul li {
-  padding-bottom: 0.5rem;
-  font-size: 0.8rem;
+#footer li {
+  padding-bottom: 0.2rem;
 }
 
 #footer #copyright {
@@ -119,7 +108,7 @@
 }
 
 #home .container {
-  margin-bottom: 10vw;
+  margin-bottom: 20vw;
 }
 
 #home .container .input-group {
@@ -628,6 +617,12 @@
   letter-spacing: 1px;
 }
 
+@media screen and (min-width: 1200px) {
+  #home div.container {
+    margin-bottom: 10vw;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .navbar.navbar-expand-lg .container .navbar-nav {
     margin: 0 0 0 auto;
@@ -643,9 +638,15 @@
     width: 250px;
     height: 180px;
   }
+  footer#footer h5::after {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  #home .container {
+    margin-bottom: 15vw;
+  }
   #areas .container .col-lg-6 .media img {
     max-width: 250px;
     height: 180px;
@@ -701,14 +702,26 @@
   #login-container #signup-form {
     display: block;
   }
+  form#terms-container div.terms-contents {
+    padding: 40px 60px;
+  }
 }
 
 @media screen and (min-width: 576px) {
   #details #stats-details ul li div.col {
     padding-left: 50px;
   }
-  footer h5 {
-    border-bottom: solid 1px black;
+  form#terms-container .terms-contents {
+    padding: 30px;
+  }
+  form#terms-container .terms-head h2 {
+    margin-bottom: 3rem;
+  }
+  form#terms-container h3 {
+    margin: 3rem 0 1.5rem;
+  }
+  #footer h5::after {
+    width: 30%;
   }
 }
 
@@ -721,9 +734,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  footer h5 {
-    border-bottom: solid 1px black;
   }
   #footer .row {
     display: block;
@@ -815,19 +825,19 @@
   margin-bottom: 40px;
   border: solid 2px #d6d6d6;
   border-radius: 10px;
-  padding: 40px 60px;
+  padding: 15px;
 }
 
 #terms-container .terms-head {
   margin-bottom: 2rem;
 }
 
-#terms-container .terms-head h1 {
-  margin-bottom: 3rem;
+#terms-container .terms-head h2 {
+  margin-bottom: 2rem;
 }
 
-#terms-container h2 {
-  margin: 3rem 0 1.5rem;
+#terms-container h3 {
+  margin: 2rem 0 1.5rem;
 }
 
 #terms-container li {
