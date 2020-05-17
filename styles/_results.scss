@@ -1,6 +1,7 @@
 // Results
 #results-container {
 	margin: 160px auto 30px;
+	min-height: calc(100vh - 570px);
 	// max-width: 1000px;
 
 	li {

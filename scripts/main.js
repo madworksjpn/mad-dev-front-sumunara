@@ -1,3 +1,5 @@
+import scrollNav from "./modules/scrollNav.js";
+
 // Navbar shrink effect
 window.onload = () => {
 	scrollNav();
