@@ -8,6 +8,7 @@
 @import "./error";
 @import "./mobile";
 @import "./animation";
+@import "./sitemap";
 
 // Google fonts
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
@@ -23,12 +24,32 @@ a {
 	color: inherit;
 
 	&:hover {
-		color: #c1564c;
+		color: $text-hover;
 	}
 }
 
-section {
-	min-height: 100vh;
+// section {
+// 	min-height: 100vh;
+// }
+
+#link-container {
+	text-align: center;
+
+	a.btn {
+		text-transform: uppercase;
+		font-size: 13px;
+		// background-color: #de7e85;
+		padding: 10px 15px;
+		// border-radius: 0;
+		color: $text-color;
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		line-height: 1.5;
+		text-decoration: none;
+		margin-top: 50px;
+		letter-spacing: 1px;
+	}
 }
 
 .btn {

@@ -1,5 +1,5 @@
-// Results
-#results-container {
+// Sitemap
+#sitemap-container {
 	margin: 160px auto 30px;
 	min-height: calc(100vh - 640px);
 	// max-width: 1000px;
@@ -12,8 +12,22 @@
 		}
 	}
 
+	hr {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
 	li {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		margin: 1rem 0;
+	}
+
+	.col {
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
