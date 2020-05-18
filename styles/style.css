@@ -138,17 +138,18 @@
   margin-top: 2rem;
 }
 
-#what-is-sumunara .col-lg-4 {
+#what-is-sumunara .col-md-4 {
   margin: 1rem 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-#what-is-sumunara .col-lg-4 .card {
+#what-is-sumunara .col-md-4 .card {
   border: none;
-  width: 90%;
   margin: auto;
 }
 
-#what-is-sumunara .col-lg-4 .card .card-img-top {
+#what-is-sumunara .col-md-4 .card .card-img-top {
   margin: auto;
   width: 15%;
 }
@@ -444,7 +445,7 @@
             justify-content: flex-end;
     width: 300px;
   }
-  #what-is-sumunara .col-lg-4 .card .card-img-top {
+  #what-is-sumunara .col-md-4 .card .card-img-top {
     width: 25%;
   }
   #areas .container .col-lg-6 .media img {
@@ -465,6 +466,9 @@
 @media screen and (min-width: 768px) {
   #home .container {
     margin-bottom: 15vw;
+  }
+  #what-is-sumunara .col-md-4 div.card {
+    width: 100%;
   }
   #areas .container .col-lg-6 .media img {
     max-width: 250px;
@@ -527,6 +531,9 @@
 }
 
 @media screen and (min-width: 576px) {
+  #what-is-sumunara .col-md-4 .card {
+    width: 90%;
+  }
   #details #stats-details ul li div.col {
     padding-left: 50px;
   }

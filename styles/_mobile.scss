@@ -25,10 +25,11 @@
 	}
 
 	// Section - What is Sumunara
-	#what-is-sumunara .col-lg-4 .card .card-img-top {
+	#what-is-sumunara .col-md-4 .card .card-img-top {
 		width: 25%;
 	}
 
+	// Section - Areas
 	#areas .container .col-lg-6 .media {
 		img {
 			width: 250px;
@@ -65,6 +66,17 @@
 	// Section - Home
 	#home .container {
 		margin-bottom: 15vw;
+	}
+
+	// Section - What is Sumunara
+	#what-is-sumunara {
+		.col-md-4 {
+			// margin: 1rem 0;
+
+			div.card {
+				width: 100%;
+			}
+		}
 	}
 
 	// Section - Areas
@@ -147,6 +159,15 @@
 
 // Tablets (576px and up)
 @include screen-sm {
+	// Section - What is Sumunara
+	#what-is-sumunara {
+		.col-md-4 {
+			.card {
+				width: 90%;
+			}
+		}
+	}
+
 	// Details
 	#details #stats-details ul li div.col {
 		padding-left: 50px;
