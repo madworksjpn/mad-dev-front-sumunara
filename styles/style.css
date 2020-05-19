@@ -120,6 +120,11 @@
   padding: 1rem 1.5rem;
 }
 
+#home .container .input-group .input-group-append {
+  border: 1px solid #ced4da;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
 #home .container .input-group .btn {
   padding: 1rem;
 }
@@ -207,8 +212,7 @@
 }
 
 #summary-container {
-  width: 90%;
-  margin: 160px auto 30px;
+  margin: 160px auto 80px;
 }
 
 #details {
