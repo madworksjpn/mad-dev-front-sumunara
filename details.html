@@ -77,15 +77,17 @@
 
 		<!-- Details summary -->
 		<div id="summary-container" class="container">
-			<h1 id="summary-title" class="text-center mb-5">住吉の情報</h1>
+			<h1 id="title" class="text-center mb-5">住吉の情報</h1>
 
-			<h3 id="summary-area" class="mb-3">住吉</h3>
+			<h3 id="postal-code" class="mb-3">〒812-0000</h3>
 
-			<p id="summary-notes" class="mb-3">
+			<h3 id="area" class="mb-3">住吉</h3>
+
+			<!-- <p id="summary-notes" class="mb-3">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
 				quos, quod consequuntur qui incidunt fugiat quia nesciunt soluta
 				assumenda unde?
-			</p>
+			</p> -->
 		</div>
 		<!-- Details summary -->
 
@@ -104,8 +106,6 @@
 					class="col-10 col-md-6 d-flex justify-content-center align-items-center"
 				>
 					<div>
-						<h4>Lorem, ipsum dolor.</h4>
-
 						<ul>
 							<li>
 								<a
@@ -252,6 +252,137 @@
 						</li>
 					</ul>
 					<!-- noise-details -->
+
+					<!-- Noise standards -->
+					<button
+						id="expand-noise-btn"
+						class="btn btn-outline-secondary mx-auto d-flex"
+						type="button"
+						data-toggle="collapse"
+						data-target="#noise-standards"
+						aria-expanded="false"
+						aria-controls="noise-standards"
+					>
+						騒音の目安
+					</button>
+
+					<div id="noise-standards" class="container collapse">
+						<caption>
+							騒音の目安
+						</caption>
+
+						<table class="table table-bordered mt-2">
+							<thead>
+								<tr>
+									<th scope="col">目安（うるささ）</th>
+									<th scope="col">騒音値（db）</th>
+									<th scope="col">
+										騒音発生源と距離（大きさの目安）
+									</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="5">
+										きわめてうるさい
+									</th>
+									<td>120 db</td>
+									<td>・飛行機のエンジンの近く</td>
+								</tr>
+
+								<tr>
+									<td>110 db</td>
+									<td>・自動車のクラクション（2m）</td>
+								</tr>
+
+								<tr>
+									<td>100 db</td>
+									<td>・電車が通るときのガード下</td>
+								</tr>
+
+								<tr>
+									<td>90 db</td>
+									<td>
+										・犬の鳴き声（5m）<br />
+										・騒々しい工場の中<br />
+										・カラオケ（店内中央）<br />
+										・ブルドーザー（5m）
+									</td>
+								</tr>
+
+								<tr>
+									<td>80 db</td>
+									<td>
+										・地下鉄の車内<br />
+										・電車の車内・ピアノ（1m）<br />
+										・布団たたき（1.5m）<br />
+										・麻雀牌をかき混ぜる音（1m）
+									</td>
+								</tr>
+
+								<tr>
+									<th rowspan="2">うるさい</th>
+									<td>70 db</td>
+									<td>
+										・騒々しい事務所の中<br />
+										・騒々しい街頭・セミの鳴き声（2m）<br />
+										・やかんの沸騰音（1m）
+									</td>
+								</tr>
+
+								<tr>
+									<td>60 db</td>
+									<td>
+										・静かな乗用車<br />
+										・普通の会話<br />
+										・洗濯機（1m）<br />
+										・掃除機（1m）<br />
+										・テレビ（1m）<br />
+										・トイレ（洗浄音）<br />
+										・アイドリング（2m）
+									</td>
+								</tr>
+
+								<tr>
+									<th rowspan="2">普通</th>
+									<td>50 db</td>
+									<td>
+										・静かな事務所<br />
+										・家庭用クーラー（室外機）<br />
+										・換気扇（1m）
+									</td>
+								</tr>
+
+								<tr>
+									<td>40 db</td>
+									<td>
+										・市内の深夜<br />
+										・図書館<br />
+										・静かな住宅地の昼
+									</td>
+								</tr>
+
+								<tr>
+									<th rowspan="2">静か</th>
+									<td>30 db</td>
+									<td>
+										・郊外の深夜<br />
+										・ささやき声
+									</td>
+								</tr>
+
+								<tr>
+									<td>20 db</td>
+									<td>
+										・ささやき<br />
+										・木の葉のふれあう音
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- Noise standards -->
 
 					<!-- traffic-accident-details -->
 					<a class="anchor" id="traffic-accident-anchor"></a>

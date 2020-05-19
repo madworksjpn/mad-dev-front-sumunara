@@ -2,7 +2,7 @@
 #summary-container {
 	// width: 90%;
 	// max-width: 1000px;
-	margin: 160px auto 80px;
+	margin: 160px auto 50px;
 }
 
 // Details
@@ -24,9 +24,9 @@
 	}
 
 	#stats {
-		h4 {
-			margin-top: 1rem;
-		}
+		// h4 {
+		// 	margin-top: 1rem;
+		// }
 
 		li {
 			font-size: 1.2rem;
@@ -85,6 +85,10 @@
 				@extend .stats-title;
 				font-size: 14px;
 			}
+		}
+
+		#noise-standards {
+			margin: 3rem auto;
 		}
 	}
 

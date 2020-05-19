@@ -212,7 +212,7 @@
 }
 
 #summary-container {
-  margin: 160px auto 80px;
+  margin: 160px auto 50px;
 }
 
 #details {
@@ -230,10 +230,6 @@
 
 #details #doughnut-chart-container {
   margin-bottom: 2rem;
-}
-
-#details #stats h4 {
-  margin-top: 1rem;
 }
 
 #details #stats li {
@@ -290,6 +286,10 @@
 
 #details #stats-details ul .time-period {
   font-size: 14px;
+}
+
+#details #stats-details #noise-standards {
+  margin: 3rem auto;
 }
 
 #details #link-container a {

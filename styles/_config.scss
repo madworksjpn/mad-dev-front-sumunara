@@ -6,7 +6,7 @@ $text-hover: #c1564c;
 $background-color: #dfe0df;
 
 $bar-low: $secondary-color;
-$bar-high: #c1564c;
+$bar-high: $text-hover;
 $bar-mid: darken(
 	$color: $primary-color,
 	$amount: 10%,
