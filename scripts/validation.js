@@ -11,6 +11,10 @@ if (document.getElementById("inputEmail")) {
 		.addEventListener("blur", validateEmail);
 }
 
+if (document.getElementById("inputCode")) {
+	document.getElementById("inputCode").addEventListener("blur", validateCode);
+}
+
 if (document.getElementById("inputPassword")) {
 	document
 		.getElementById("inputPassword")
@@ -25,7 +29,7 @@ if (document.getElementById("inputConfirmPassword")) {
 
 function validateName() {
 	const name = document.getElementById("inputUserName");
-	const re = /^[a-zA-Z]{2,15}$/;
+	const re = /^[a-zA-Z1-9]{1,15}$/;
 
 	if (!re.test(name.value)) {
 		name.classList.add("is-invalid");
@@ -45,9 +49,21 @@ function validateEmail() {
 	}
 }
 
+function validateCode() {
+	const code = document.getElementById("inputCode");
+	const re = /^[1-9]{6}$/;
+
+	if (!re.test(code.value)) {
+		code.classList.add("is-invalid");
+	} else {
+		code.classList.remove("is-invalid");
+	}
+}
+
 function validatePassword() {
 	const password = document.getElementById("inputPassword");
-	const re = /^(?!.*[\s])(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+	// const re = /^(?!.*[\s])(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+	const re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
 	if (!re.test(password.value)) {
 		password.classList.add("is-invalid");
