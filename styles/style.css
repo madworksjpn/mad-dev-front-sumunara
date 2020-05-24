@@ -578,9 +578,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #footer .row {
-    display: block;
-  }
   #footer .row .col-md-3 {
     margin: 0 auto;
     padding: 0;

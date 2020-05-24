@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CDN -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<link rel="stylesheet" href="./styles/style.css" />
+
+		<title>Sumunara</title>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img
+						src="images/logo_transparent2.png"
+						alt="sumunara logo"
+					/>
+					Sumunara
+				</a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"
+								>ホーム<span class="sr-only">(current)</span></a
+							>
+						</li>
+
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="login.html">ログイン</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="signup.html"
+								>アカウント作成</a
+							>
+						</li> -->
+
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="#">ログアウト</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar -->
+
+		<!-- Section - Home -->
+		<section id="home">
+			<div class="container">
+				<div class="input-group">
+					<input
+						type="text"
+						id="search"
+						class="form-control"
+						placeholder="住所を入力..."
+						aria-label="Type in postal code or address..."
+						aria-describedby="basic-addon2"
+					/>
+
+					<div class="input-group-append">
+						<button class="btn btn-light" type="button">
+							<img
+								src="images/search-24px.svg"
+								alt="search button"
+							/>
+						</button>
+					</div>
+				</div>
+
+				<div id="match-list"></div>
+			</div>
+		</section>
+		<!-- Section - Home -->
+
+		<!-- Section - What is Sumunara -->
+		<section id="what-is-sumunara">
+			<div class="container">
+				<div
+					class="h-200 row align-items-center justify-content-center text-center"
+				>
+					<h1>Sumunaraとは?</h1>
+				</div>
+
+				<div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card fade-in" data-delay="0s">
+								<img
+									class="card-img-top"
+									src="./images/icons/index_what-is-sumuna_icon1.png"
+									alt="information icon"
+								/>
+								<div class="card-body">
+									<h5 class="card-title text-center">
+										地域の情報
+									</h5>
+									<p class="card-text">
+										住所から周辺情報を簡単に検索できます。<br />交通や治安、騒音等、住まいに関する情報をお届けします。
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card fade-in" data-delay=".25s">
+								<img
+									class="card-img-top"
+									src="./images/icons/index_what-is-sumuna_icon2.png"
+									alt="search icon"
+								/>
+								<div class="card-body">
+									<h5 class="card-title text-center">
+										住みたい街が見つかる
+									</h5>
+									<p class="card-text">
+										街に住む上であなたが重視することはどんなことですか？<br />事前に登録しておくことであなたの希望に合った街が検索しやすくなります。
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card fade-in" data-delay=".7s">
+								<img
+									class="card-img-top"
+									src="./images/icons/index_what-is-sumuna_icon3.png"
+									alt="lightbulb"
+								/>
+								<div class="card-body">
+									<h5 class="card-title text-center">
+										新しい発見
+									</h5>
+									<p class="card-text">
+										自分の住む街でも意外と知らない魅力が隠れているものです。<br />どんなイベントがあるのか？どんなお店があるのか？<br />たくさん知って、自分の住む街をもっと好きになりませんか？
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div
+					class="h-100px row align-items-center justify-content-center"
+				>
+					<button class="btn btn-warning">もっと詳しく</button>
+				</div> -->
+			</div>
+		</section>
+		<!-- Section - What is Sumunara -->
+
+		<!-- Section - Areas -->
+		<section id="areas">
+			<div class="container mx-auto">
+				<div
+					class="h-200 row align-items-center justify-content-center text-center"
+				>
+					<h1>街の最新情報</h1>
+				</div>
+			</div>
+
+			<div class="container mx-auto">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="media mx-auto">
+							<a
+								href="https://yokanavi.com/event/"
+								class="row align-items-center"
+								target="_blank"
+							>
+								<img
+									data-src=".\images\index_areas_image1.jpg"
+									class="img-fluid col-md-6 mx-auto"
+									alt="出かけよう！イベント画像"
+								/>
+
+								<div
+									class="media-body row col-12 col-md-6 mx-auto"
+								>
+									<h5 class="mt-2">注目イベント</h5>
+
+									<p>
+										福岡で開催される注目のイベントを掲載しています。
+									</p>
+									<!-- 抽象的なパターン -->
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="media mx-auto">
+							<a href="#" class="row align-items-center">
+								<img
+									data-src="./images/index_areas_image2.jpg"
+									class="img-fluid col-md-6 mx-auto"
+									alt="私が求めてるのはどの地域かな？画像"
+								/>
+
+								<div class="media-body row col-md-6 mx-auto">
+									<h5 class="mt-2">注目の地域ランキング</h5>
+
+									<p>
+										アクセスの多い地域のTOP10！どんなところが魅力なの？を一目で確認しましょう！
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container mx-auto">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="media mx-auto">
+							<a
+								href="https://www.city.fukuoka.lg.jp/kyoiku-iinkai/tsuugaku/ed/area/tsugaku.html"
+								class="row align-items-center"
+								target="_blank"
+							>
+								<img
+									data-src="./images/index_areas_image3.jpg"
+									class="img-fluid col-md-6 mx-auto"
+									alt="懐かしの教室画像"
+								/>
+
+								<div
+									class="media-body row col-12 col-md-6 mx-auto"
+								>
+									<h5 class="mt-2">
+										校区データ集
+									</h5>
+
+									<p>
+										各地区の通学区情報を学校別・町名別にとりまとめた校区データ集です。
+									</p>
+									<!--違う形で提供した方がいいかも-->
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="media mx-auto">
+							<a
+								href="http://kateigomi-bunbetsu.city.fukuoka.lg.jp/"
+								class="row align-items-center"
+								target="_blank"
+							>
+								<img
+									data-src="./images/index_areas_image4.jpg"
+									class="img-fluid col-md-6 mx-auto"
+									alt="整頓されたゴミ置き場の画像"
+								/>
+
+								<div class="media-body row col-md-6 mx-auto">
+									<h5 class="mt-2">
+										地域別 ゴミの収集日一覧
+									</h5>
+
+									<p>
+										地域ごとに決まっているゴミの収集日を一覧にしてまとめました。
+									</p>
+									<!--掲載する場所変える？範囲が広すぎるからリンクを張るだけでも良さげ。-->
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container mx-auto">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="media mx-auto">
+							<a
+								href="https://tabelog.com/fukuoka/rank/"
+								class="row align-items-center"
+								target="_blank"
+							>
+								<img
+									data-src="./images/index_areas_image5.jpg"
+									class="img-fluid col-md-6 mx-auto"
+									alt="美味しそうなグルメ画像"
+								/>
+
+								<div
+									class="media-body row col-12 col-md-6 mx-auto"
+								>
+									<h5 class="mt-2">人気グルメ店ランキング</h5>
+
+									<p>
+										福岡の人気グルメ店をランキング形式でまとめました。<br />近くにこんなお店が！たくさんの美味しいを発見しましょう！
+									</p>
+									<!--鉄板ネタ-->
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="media mx-auto">
+							<a href="#" class="row align-items-center">
+								<img
+									data-src="./images/index_areas_image6.jpg"
+									class="img-fluid col-md-6 mx-auto"
+									alt="わくわくする居酒屋画像"
+								/>
+
+								<div class="media-body row col-md-6 mx-auto">
+									<h5 class="mt-2">
+										地域別 居酒屋最安値はどこ？
+									</h5>
+
+									<p>
+										どうせなら安くてたくさんお酒が飲めたほうがいいですよね？<br />そんな情報を地域別にまとめました！
+									</p>
+									<!--酒飲み達をターゲット。専用サイト作った方がいいかも。-->
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Section - Areas -->
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row mx-auto justify-content-center py-5">
+					<div class="col-lg-2 mb-3">
+						<h5 class="col-12 px-0">住みたい</h5>
+
+						<ul class="list-unstyled col-12 px-0">
+							<li>
+								<a
+									href="https://www.city.fukuoka.lg.jp/higashi/index.html"
+									target="_blank"
+									>東区</a
+								>
+							</li>
+
+							<li>
+								<a
+									href="https://www.city.fukuoka.lg.jp/hakata/index.html"
+									target="_blank"
+									>博多区</a
+								>
+							</li>
+
+							<li>
+								<a
+									href="https://www.city.fukuoka.lg.jp/chuo/index.html"
+									target="_blank"
+									>中央区</a
+								>
+							</li>
+
+							<li>
+								<a
+									href="https://www.city.fukuoka.lg.jp/minami/index.html"
+									target="_blank"
+									>南区</a
+								>
+							</li>
+
+							<li>
+								<a
+									href="https://www.city.fukuoka.lg.jp/jonan/index.html"
+									target="_blank"
+									>城南区</a
+								>
+							</li>
+
+							<li>
+								<a
+									href="https://www.city.fukuoka.lg.jp/sawara/index.html"
+									target="_blank"
+									>早良区</a
+								>
+							</li>
+
+							<li>
+								<a
+									href="https://www.city.fukuoka.lg.jp/nishi/index.html"
+									target="_blank"
+									>西区</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-2 mb-3">
+						<h5 class="col-12 px-0">知りたい</h5>
+
+						<ul class="list-unstyled col-12 px-0">
+							<li>
+								<a
+									href="https://www.cookdoor.jp/fukuoka/sc40130/list/"
+									target="_blank"
+									>飲食店</a
+								>
+							</li>
+
+							<li>
+								<a
+									href="https://yokanavi.com/event/"
+									target="_blank"
+									>イベント</a
+								>
+							</li>
+
+							<li>
+								<a href="#" class="btn-link disabled">環境</a>
+							</li>
+
+							<li>
+								<a href="#" class="btn-link disabled"
+									>治安・安全</a
+								>
+							</li>
+
+							<li>
+								<a href="#" class="btn-link disabled"
+									>入園・入学</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-2 mb-3">
+						<h5 class="col-12 px-0">コラム</h5>
+
+						<ul class="list-unstyled col-12 px-0">
+							<li>
+								<a href="sitemap.html">サイトマップ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="copyright" class="text-center row align-items-center">
+					<p>
+						<a href="index.html">
+							<img
+								src="images/logo_transparent2.png"
+								alt="sumunara logo"
+							/>
+						</a>
+						<span id="year"></span> MAD Works, LLC
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer -->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+
+		<script type="module" src="scripts/main.js"></script>
+		<script src="/scripts/animation.js"></script>
+		<script src="/scripts/autocomplete.js"></script>
+	</body>
+</html>
